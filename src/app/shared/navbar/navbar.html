@@ -1,1 +1,16 @@
-<p>navbar works!</p>
+@if(profile(); as p)
+{
+    <nav>
+        <h2>
+            {{p.name}}
+        </h2>
+        <div>
+            <a routerLink="home" routerLinkActive="active">Home</a>
+            <a routerLink="about" routerLinkActive="active">About</a>
+            <a routerLink="project" routerLinkActive="active">Project</a>
+            <a routerLink="experience" routerLinkActive="active">Experience</a>
+            <a routerLink="skills" routerLinkActive="active">Skills</a>
+            <a routerLink="contact" routerLinkActive="active">Contact</a>
+        </div>
+    </nav>
+}

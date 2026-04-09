@@ -1,0 +1,12 @@
+@for(e of education();track e){
+    <img [src]="e.institutelogo" [alt]="e.institute">
+    <h3>{{e.institute}}</h3>
+    <p>{{e.specialization}}</p>
+    <p>{{e.yearofpassing}}</p>
+    <p>{{e.percentage}}</p>
+    <ul>
+        @for(d of e.description;track d){
+            <li>{{d}}</li>
+        }
+    </ul>
+}

@@ -1,1 +1,7 @@
-<p>about works!</p>
+@if(profile(); as p){
+    <p>I am {{p.name}}</p>
+
+    @for(a of p.about;track a){
+        <p>{{a.description}}</p>
+    }
+}

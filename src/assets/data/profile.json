@@ -1,0 +1,39 @@
+{
+    "name": "Devendra Dewangan",
+    "title": "Design & Development",
+    "summary" : "I build scalable web application",
+    "skills" : ["Web","Mobile","DevOps","Testing"],
+    "about" : [
+        {
+            "description":"a Fullstack Developer specialized in .Net Core and Angular",
+            "image": "https://avatars.githubusercontent.com/u/1055490?v=4"
+        },
+        {
+            "description":"I Build scalable web application and real-time system, I have experience working at Siemens, where I contributed to healthcare monitoring system",
+            "image": "https://avatars.githubusercontent.com/u/1055490?v=4"
+        },
+        {
+            "description":"I focused in writing clean, maintainable and high-performance code, and I enjoy solving problems and improving system reliability",
+             "image": "https://avatars.githubusercontent.com/u/1055490?v=4"
+        }
+    ],
+    "email" : "devendra_dewangan@outlook.com",
+    "cvLink" : "https://google.com",
+    "address" : "Dhamtari, Chhattisgarh, India",
+    "phone"  :  "+91-9827111084",
+    "copyright" : "&copy; 2026 Devendra Dewangan. All rights reserved.",
+    "socials"  :  [
+        {
+            "name" : "Linkedin",
+            "link" : "https://www.linkedin.com/in/devendra-dewangan/"
+        },
+        {
+            "name" : "Github",
+            "link" : "https://github.com/devendra-dewangan"
+        },
+        {
+            "name"  :  "Twitter",
+            "link"  :  "https://twitter.com/devendra_dewangan"
+        }
+    ]
+}

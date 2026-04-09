@@ -1,1 +1,11 @@
-<p>projects works!</p>
+@for (p of project(); track p) {
+    <p>{{p.name}}</p>
+    <p>{{p.completiondate}}</p>
+    <p>{{p.status}}</p>
+    <ul>
+        @for (d of p.description; track d) 
+        {
+            <li>{{d}}</li>
+        }
+    </ul>
+}

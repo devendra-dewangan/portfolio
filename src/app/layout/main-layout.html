@@ -1,1 +1,11 @@
-<p>main-layout works!</p>
+<app-navbar/>
+<main class="content">
+@if(loading())
+{
+    <app-loader/> 
+}
+@else{
+    <router-outlet/>
+}
+</main>
+<app-footer/>

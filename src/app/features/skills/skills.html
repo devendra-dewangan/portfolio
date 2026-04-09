@@ -1,1 +1,11 @@
-<p>skills works!</p>
+
+@for(item of skills(); track item)
+{
+    <h3>{{item.type}}</h3>
+    <ul>
+        @for(skill of item.skills;track skill)
+        {
+            <li><img [ngSrc]='skill.logoUrl' width="10" height="10" [alt]='skill.name'></li>
+        }
+    </ul>
+}  

@@ -1,1 +1,12 @@
-<p>home works!</p>
+@if(profile(); as p){
+    <p>Welcome to my portfolio!</p>
+    <h1>I am {{p.name.split(" ")[0]}}</h1>
+    <p>{{p.summary}}</p>
+    <p>{{p.skills.join(' | ')}}</p>
+    <div>
+        <a [href]='p.cvLink' >Download CV</a>
+        <a routerLink="/project">See My Work</a>
+    </div>
+}
+
+

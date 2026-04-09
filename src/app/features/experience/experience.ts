@@ -2,12 +2,12 @@ import { Component, inject } from '@angular/core';
 import { DataService } from '../../core/service/data.service';
 
 @Component({
-  selector: 'app-projects',
+  selector: 'app-experience',
   imports: [],
-  templateUrl: './projects.html',
-  styleUrl: './projects.css',
+  templateUrl: './experience.html',
+  styleUrl: './experience.css',
 })
-export class Projects {
+export class Experience {
   private dataService = inject(DataService);
-  project = this.dataService.get("projects");
+  experience = this.dataService.get("experiences");
 }

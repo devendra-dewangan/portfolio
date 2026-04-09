@@ -1,9 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { DataService } from '../../core/service/data.service';
+import { NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-skills',
-  imports: [],
+  imports: [NgOptimizedImage],
   templateUrl: './skills.html',
   styleUrl: './skills.css',
 })
-export class Skills {}
+export class Skills {
+  private dataService = inject(DataService);
+  skills = this.dataService.get('skills');
+}

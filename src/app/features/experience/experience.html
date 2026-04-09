@@ -1,0 +1,10 @@
+@for (e of experience(); track e) {
+    <p>{{e.company}} - {{e.location}}</p>
+    <p>{{e.title}}</p>
+    <p>{{e.startdate}} - {{e.enddate}}</p>
+    <ul>
+        @for (d of e.description; track d) {
+            <li>{{d}}</li>
+        }
+    </ul>
+}
