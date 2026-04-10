@@ -1,16 +1,76 @@
 @if(profile(); as p)
 {
-    <nav>
-        <h2>
-            {{p.name}}
-        </h2>
-        <div>
-            <a routerLink="home" routerLinkActive="active">Home</a>
-            <a routerLink="about" routerLinkActive="active">About</a>
-            <a routerLink="project" routerLinkActive="active">Project</a>
-            <a routerLink="experience" routerLinkActive="active">Experience</a>
-            <a routerLink="skills" routerLinkActive="active">Skills</a>
-            <a routerLink="contact" routerLinkActive="active">Contact</a>
+  <nav class="fixed top-0 left-0 w-full bg-gray-950/80 backdrop-blur border-b border-gray-800 z-50">
+    
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+      <!-- Logo / Name -->
+      <h2 class="text-xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+        {{ p.name }}
+      </h2>
+
+      <!-- Links -->
+      <div class="hidden md:flex items-center gap-6 text-sm">
+
+        <a routerLink="home" routerLinkActive="text-blue-400"
+           class="text-gray-300 hover:text-blue-400 transition">
+          Home
+        </a>
+
+        <a routerLink="home" routerLinkActive="text-blue-400"
+           fragment="about" class="text-gray-300 hover:text-blue-400 transition">
+          About
+        </a>
+
+        <a routerLink="home" fragment="project" routerLinkActive="text-blue-400"
+           class="text-gray-300 hover:text-blue-400 transition">
+          Project
+        </a>
+
+        <a routerLink="home" fragment="experience" routerLinkActive="text-blue-400"
+           class="text-gray-300 hover:text-blue-400 transition">
+          Experience
+        </a>
+
+        <a routerLink="home" fragment="education" routerLinkActive="text-blue-400"
+           class="text-gray-300 hover:text-blue-400 transition">
+          Education
+        </a>
+
+        <a routerLink="home" fragment="skills" routerLinkActive="text-blue-400"
+           class="text-gray-300 hover:text-blue-400 transition">
+          Skills
+        </a>
+
+        <a routerLink="home" fragment="contact" routerLinkActive="text-blue-400"
+           class="text-gray-300 hover:text-blue-400 transition">
+          Contact
+        </a>
+
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button 
+        class="md:hidden text-gray-300"
+        (click)="isOpen = !isOpen">
+        ☰
+      </button>
+
+    </div>
+
+    @if(isOpen){
+        <div class="md:hidden px-6 pb-4 space-y-3 text-sm">
+    
+          <a routerLink="home" class="block text-gray-300" (click)="isOpen = !isOpen">Home</a>
+          <a routerLink=home routerLink="about" class="block text-gray-300" (click)="isOpen = !isOpen">About</a>
+          <a routerLink="home" fragment="project" class="block text-gray-300" (click)="isOpen = !isOpen">Project</a>
+          <a routerLink="home" fragment="experience" class="block text-gray-300" (click)="isOpen = !isOpen">Experience</a>
+          <a routerLink="home" fragment="education" class="block text-gray-300" (click)="isOpen = !isOpen">Project</a>
+          <a routerLink="home" fragment="skills" class="block text-gray-300" (click)="isOpen = !isOpen">Experience</a>
+          <a routerLink="home" fragment="contact" class="block text-gray-300" (click)="isOpen = !isOpen">Experience</a>
         </div>
-    </nav>
+    }
+    <!-- Mobile Menu -->
+
+  </nav>
 }

@@ -1,12 +1,104 @@
 @if(profile(); as p){
-    <p>Welcome to my portfolio!</p>
-    <h1>I am {{p.name.split(" ")[0]}}</h1>
-    <p>{{p.summary}}</p>
-    <p>{{p.skills.join(' | ')}}</p>
-    <div>
-        <a [href]='p.cvLink' >Download CV</a>
-        <a routerLink="/project">See My Work</a>
+  <section class="min-h-screen w-full bg-gray-950 text-white flex items-center px-6">
+
+    <div class="max-w-6xl mx-auto w-full grid md:grid-cols-2 gap-10 items-center">
+
+      <!-- LEFT CONTENT -->
+      <div class="space-y-6">
+
+        <!-- Welcome -->
+        <p class="text-gray-400 text-sm tracking-widest uppercase">
+          Welcome to my portfolio
+        </p>
+
+        <!-- Name -->
+        <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+          Hi, I am  
+          <span class="bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
+            {{ p.name.split(" ")[0] }}
+          </span>
+        </h1>
+
+        <!-- Summary -->
+        <p class="text-gray-300 text-lg leading-relaxed max-w-xl">
+          {{ p.summary }}
+        </p>
+
+        <!-- Skills -->
+        <div class="flex flex-wrap gap-2">
+          @for(skill of p.skills; track skill){
+            <span class="px-3 py-1 text-sm bg-gray-800 border border-gray-700 rounded-full hover:bg-gray-700 transition">
+              {{ skill }}
+            </span>
+          }
+        </div>
+
+        <!-- Buttons -->
+        <div class="flex gap-4 pt-4">
+
+          <a 
+            [href]="p.cvLink"
+            download
+            class="px-6 py-3 bg-blue-600 hover:bg-blue-700 transition rounded-lg font-medium shadow-lg hover:shadow-blue-500/30">
+            Download CV
+          </a>
+
+          <a 
+            fragment="project"
+            class="px-6 py-3 border border-gray-600 hover:border-blue-500 hover:text-blue-400 transition rounded-lg font-medium">
+            See My Work
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- RIGHT SIDE (OPTIONAL IMAGE / ILLUSTRATION) -->
+      <div class="hidden md:flex justify-center">
+
+        <div class="w-64 h-64 rounded-full bg-gradient-to-br from-blue-500/20 to-cyan-400/20 flex items-center justify-center shadow-lg">
+          
+          <!-- Replace with your image -->
+          <span class="text-gray-400 text-sm">Your Image</span>
+
+        </div>
+
+      </div>
+
     </div>
+
+  </section>
+    
 }
 
+<app-about/>
 
+
+@defer (on viewport) {
+    <app-projects/>
+} @placeholder {
+    <app-loader/>
+}
+
+<section id="experience">
+@defer (on viewport) {
+    <app-experience/>
+} @placeholder {
+    <app-loader/>
+}
+</section>
+@defer (on viewport) {
+    <app-education/>
+} @placeholder {
+    <app-loader/>
+}
+@defer (on viewport) {
+    <app-skills/>
+} @placeholder {
+    <app-loader/>
+}
+@defer (on viewport) {
+    <app-contact/>
+} @placeholder {
+    <app-loader/>
+}

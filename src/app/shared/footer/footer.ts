@@ -11,4 +11,5 @@ import { DataService } from '../../core/service/data.service';
 export class Footer {
   private dataService = inject(DataService);
   profile = this.dataService.get('profile');
+  currentYear = new Date().getFullYear();
 }

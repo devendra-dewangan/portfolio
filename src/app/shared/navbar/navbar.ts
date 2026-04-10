@@ -11,4 +11,5 @@ import { DataService } from '../../core/service/data.service';
 export class Navbar {
   private dataService = inject(DataService);
   profile = this.dataService.get('profile');
+  isOpen = false;
 }

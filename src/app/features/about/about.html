@@ -1,7 +1,33 @@
 @if(profile(); as p){
-    <p>I am {{p.name}}</p>
+  <section class="min-h-screen bg-gray-950 text-white px-6 py-16 flex items-center">
 
-    @for(a of p.about;track a){
-        <p>{{a.description}}</p>
-    }
+    <div class="max-w-4xl mx-auto text-center space-y-6">
+
+      <!-- Heading -->
+      <h2 class="text-3xl md:text-4xl font-bold">
+        About Me
+      </h2>
+
+      <!-- Name -->
+      <p class="text-lg text-gray-300">
+        Hi, I am 
+        <span class="text-blue-400 font-semibold">
+          {{ p.name }}
+        </span>
+      </p>
+
+      <!-- About Content -->
+      <div class="space-y-4 text-gray-400 leading-relaxed">
+
+        @for(a of p.about; track a){
+          <p class="text-base md:text-lg">
+            {{ a.description }}
+          </p>
+        }
+
+      </div>
+
+    </div>
+
+  </section>
 }

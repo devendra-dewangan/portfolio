@@ -1,11 +1,53 @@
+<section class="min-h-screen bg-gray-950 text-white px-6 py-16">
 
-@for(item of skills(); track item)
-{
-    <h3>{{item.type}}</h3>
-    <ul>
-        @for(skill of item.skills;track skill)
-        {
-            <li><img [ngSrc]='skill.logoUrl' width="10" height="10" [alt]='skill.name'></li>
-        }
-    </ul>
-}  
+  <div class="max-w-6xl mx-auto">
+
+    <!-- Heading -->
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+      Skills
+    </h2>
+
+    <!-- Skill Categories -->
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+
+      @for(item of skills(); track item)
+      {
+        <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 shadow-lg hover:shadow-blue-500/10 transition duration-300">
+
+          <!-- Category Title -->
+          <h3 class="text-lg font-semibold text-blue-400 mb-4">
+            {{ item.type }}
+          </h3>
+
+          <!-- Skills Grid -->
+          <div class="grid grid-cols-3 gap-4">
+
+            @for(skill of item.skills; track skill)
+            {
+              <div class="flex flex-col items-center gap-2 p-3 bg-gray-800 rounded-lg hover:bg-gray-700 transition">
+
+                <img 
+                  [ngSrc]="skill.logoUrl"
+                  width="40"
+                  height="40"
+                  [alt]="skill.name"
+                  class="object-contain"
+                >
+
+                <span class="text-xs text-gray-300 text-center">
+                  {{ skill.name }}
+                </span>
+
+              </div>
+            }
+
+          </div>
+
+        </div>
+      }
+
+    </div>
+
+  </div>
+
+</section>

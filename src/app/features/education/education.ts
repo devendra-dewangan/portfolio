@@ -6,6 +6,9 @@ import { DataService } from '../../core/service/data.service';
   imports: [],
   templateUrl: './education.html',
   styleUrl: './education.css',
+  host:{
+    id:"education"
+  }
 })
 export class Education {
   private dataService = inject(DataService);

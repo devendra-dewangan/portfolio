@@ -5,5 +5,8 @@ import { Component } from '@angular/core';
   imports: [],
   templateUrl: './contact.html',
   styleUrl: './contact.css',
+  host:{
+    id:"contact"
+  }
 })
 export class Contact {}

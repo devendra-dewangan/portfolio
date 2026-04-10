@@ -1,9 +1,9 @@
-<!-- From Uiverse.io by cosnametv --> 
-<div class="loader">
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
+<div *ngIf="loading" class="min-h-screen fixed inset-0 bg-gray-950 flex items-center justify-center z-50">
+
+  <div class="flex gap-2">
+    <span class="w-3 h-3 bg-blue-500 rounded-full animate-bounce"></span>
+    <span class="w-3 h-3 bg-blue-500 rounded-full animate-bounce [animation-delay:0.1s]"></span>
+    <span class="w-3 h-3 bg-blue-500 rounded-full animate-bounce [animation-delay:0.2s]"></span>
+  </div>
+
 </div>

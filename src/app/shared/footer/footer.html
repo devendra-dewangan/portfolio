@@ -1,36 +1,62 @@
 @if(profile(); as p){
-    <div>
-        <h3>About Me</h3>
-        <ul>
-            <li>{{p.name}}</li>
-            <li>{{p.title}}</li>
-            <li>{{p.skills.join(' | ')}}</li>
+  <footer class="bg-gray-950 text-white border-t border-gray-800 px-6 py-12">
+
+    <div class="max-w-6xl mx-auto grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+
+      <!-- About -->
+      <div>
+        <h3 class="text-lg font-semibold text-blue-400 mb-4">About Me</h3>
+        <ul class="space-y-2 text-sm text-gray-300">
+          <li>{{ p.name }}</li>
+          <li>{{ p.title }}</li>
+          <li class="text-gray-400">{{ p.skills.join(' | ') }}</li>
         </ul>
-    </div>
-    <div>
-        <h3>Contact Me</h3>
-        <ul>
-            <li>{{p.email}}</li>
-            <li>{{p.phone}}</li>
-            <li>{{p.address}}</li>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h3 class="text-lg font-semibold text-blue-400 mb-4">Contact</h3>
+        <ul class="space-y-2 text-sm text-gray-300">
+          <li>{{ p.email }}</li>
+          <li>{{ p.phone }}</li>
+          <li>{{ p.address }}</li>
         </ul>
-    </div>
-    <div>
-        <h3>Social Media</h3>
-        <ul>
-        @for(s of p.socials;track s)
-        {
+      </div>
+
+      <!-- Social -->
+      <div>
+        <h3 class="text-lg font-semibold text-blue-400 mb-4">Social</h3>
+        <ul class="space-y-2 text-sm">
+          @for(s of p.socials; track s){
             <li>
-                <a [href]='s.link' target="_blank">{{s.name}}</a>
+              <a 
+                [href]="s.link" 
+                target="_blank"
+                class="text-gray-300 hover:text-blue-400 transition">
+                {{ s.name }}
+              </a>
             </li>
-        }
+          }
         </ul>
-    </div>
-    <div>
-        <h3>Quick Links</h3>
-        <div>
-            <a routerLink="/home">Home</a>
-            <a routerLink="/about">About</a>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h3 class="text-lg font-semibold text-blue-400 mb-4">Quick Links</h3>
+        <div class="flex flex-col gap-2 text-sm">
+          <a routerLink="/home" class="text-gray-300 hover:text-blue-400 transition">Home</a>
+          <a routerLink="/about" class="text-gray-300 hover:text-blue-400 transition">About</a>
+          <a routerLink="/project" class="text-gray-300 hover:text-blue-400 transition">Projects</a>
+          <a routerLink="/contact" class="text-gray-300 hover:text-blue-400 transition">Contact</a>
         </div>
+      </div>
+
     </div>
+
+    <!-- Bottom Line -->
+    <div class="mt-10 pt-6 border-t border-gray-800 text-center text-sm text-gray-500">
+      © {{ p.name }} {{ currentYear }}. All rights reserved.
+    </div>
+
+  </footer>
 }

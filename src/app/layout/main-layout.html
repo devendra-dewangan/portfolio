@@ -1,11 +1,15 @@
-<app-navbar/>
-<main class="content">
-@if(loading())
-{
-    <app-loader/> 
-}
-@else{
-    <router-outlet/>
-}
-</main>
-<app-footer/>
+<div class="flex flex-col">
+
+  <app-navbar />
+
+  <main class="">
+    @if(loading()) {
+      <app-loader />
+    } @else {
+      <router-outlet />
+    }
+  </main>
+
+  <app-footer />
+
+</div>
