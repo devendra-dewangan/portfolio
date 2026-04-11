@@ -1,241 +1,88 @@
 [
-    {
-        "type":"Backend",
-        "skills":[
-            {
-                "name": ".net core",
-                "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Microsoft_dotNET_logo.svg/1200px-Microsoft_dotNET_logo.svg.png"
-            },
-            {
-                "name":"Entity Framework Core",
-                "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Entity_Framework_Core_logo.svg/1200px-Entity_Framework_Core_logo.svg.png"
-            },
-            {
-                "name":"Swagger",
-                "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Entity_Framework_Core_logo.svg/1200px-Entity_Framework_Core_logo.svg.png"
-            },
-            {
-                "name":"SQL Server",
-                "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Entity_Framework_Core_logo.svg/1200px-Entity_Framework_Core_logo.svg.png"
-            },
-            {
-                "name":"Identity Framework Core",
-                "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Entity_Framework_Core_logo.svg/1200px-Entity_Framework_Core_logo.svg.png"
-            },
-            {
-                "name":"JWT",
-                "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Entity_Framework_Core_logo.svg/1200px-Entity_Framework_Core_logo.svg.png"
-            },
-            {
-                "name":"OAuth",
-                "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Entity_Framework_Core_logo.svg/1200px-Entity_Framework_Core_logo.svg.png"
-            },
-            {
-                "name":"Redis",
-                "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Entity_Framework_Core_logo.svg/1200px-Entity_Framework_Core_logo.svg.png"
-            }
-        ]
-    },
-    {
-        "type":"Frontend",
-        "skills":[
-            {
-                "name":"Angular",
-                "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Entity_Framework_Core_logo.svg/1200px-Entity_Framework_Core_logo.svg.png"
-            },
-            {
-                "name":"Ionic",
-                "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Entity_Framework_Core_logo.svg/1200px-Entity_Framework_Core_logo.svg.png"
-            },
-            {
-                "name":"RxJs",
-                "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Entity_Framework_Core_logo.svg/1200px-Entity_Framework_Core_logo.svg.png"
-            },
-            {
-                "name":"NgRx",
-                "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Entity_Framework_Core_logo.svg/1200px-Entity_Framework_Core_logo.svg.png"
-            },
-            {
-                "name":"Angular Material",
-                "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Entity_Framework_Core_logo.svg/1200px-Entity_Framework_Core_logo.svg.png"
-            },
-            {
-                "name":"Tailwind CSS",
-                "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Entity_Framework_Core_logo.svg/1200px-Entity_Framework_Core_logo.svg.png"
-            },
-            {
-                "name":"Bootstrap",
-                "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Entity_Framework_Core_logo.svg/1200px-Entity_Framework_Core_logo.svg.png"
-            }
-        ]
-    },
-    {
-        "type":"Testing",
-        "skills":[
-            {
-                "name":"Specflow",
-                "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Entity_Framework_Core_logo.svg/1200px-Entity_Framework_Core_logo.svg.png"
-            },
-            {
-                "name":"XUnit",
-                "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Entity_Framework_Core_logo.svg/1200px-Entity_Framework_Core_logo.svg.png"
-            },
-            {
-                "name":"Moq",
-                "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Entity_Framework_Core_logo.svg/1200px-Entity_Framework_Core_logo.svg.png"
-            },
-            {
-                "name":"Jasmine",
-                "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Entity_Framework_Core_logo.svg/1200px-Entity_Framework_Core_logo.svg.png"
-            },
-            {
-                "name":"Karma",
-                "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Entity_Framework_Core_logo.svg/1200px-Entity_Framework_Core_logo.svg.png"
-            },
-            {
-                "name":"Jest",
-                "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Entity_Framework_Core_logo.svg/1200px-Entity_Framework_Core_logo.svg.png"
-            },
-            {
-                "name":"Playwright",
-                "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Entity_Framework_Core_logo.svg/1200px-Entity_Framework_Core_logo.svg.png"
-            },
-            {
-                "name":"Selenium",
-                "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Entity_Framework_Core_logo.svg/1200px-Entity_Framework_Core_logo.svg.png"
-            }
-        ]
-    },
-    {
-        "type":"DevOps",
-        "skills":[
-            {
-                "name":"Linux",
-                "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Entity_Framework_Core_logo.svg/1200px-Entity_Framework_Core_logo.svg.png"
-            },
-            {
-                "name":"Docker",
-                "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Entity_Framework_Core_logo.svg/1200px-Entity_Framework_Core_logo.svg.png"
-            },
-            {
-                "name":"Kubernetes",
-                "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Entity_Framework_Core_logo.svg/1200px-Entity_Framework_Core_logo.svg.png"
-            },
-            {
-                "name":"Jenkins",
-                "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Entity_Framework_Core_logo.svg/1200px-Entity_Framework_Core_logo.svg.png"
-            },
-            {
-                "name":"Azure Board",
-                "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Entity_Framework_Core_logo.svg/1200px-Entity_Framework_Core_logo.svg.png"
-            },
-            {
-                "name":"Azure Pipeline",
-                "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Entity_Framework_Core_logo.svg/1200px-Entity_Framework_Core_logo.svg.png"
-            },
-            {
-                "name":"GitHub",
-                "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Entity_Framework_Core_logo.svg/1200px-Entity_Framework_Core_logo.svg.png"
-            }
-        ]
-    },
-    {
-        "type":"Tools",
-        "skills":[
-            {
-                "name":"Visual Studio",
-                "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Entity_Framework_Core_logo.svg/1200px-Entity_Framework_Core_logo.svg.png"
-            },
-            {
-                "name":"Visual Studio Code",
-                "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Entity_Framework_Core_logo.svg/1200px-Entity_Framework_Core_logo.svg.png"
-            },
-            {
-                "name":"Azure DevOps",
-                "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Entity_Framework_Core_logo.svg/1200px-Entity_Framework_Core_logo.svg.png"
-            },
-            {
-                "name":"Postman",
-                "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Entity_Framework_Core_logo.svg/1200px-Entity_Framework_Core_logo.svg.png"
-            },
-            {
-                "name":"Git",
-                "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Entity_Framework_Core_logo.svg/1200px-Entity_Framework_Core_logo.svg.png"
-            },
-            {
-                "name":"GitHub Copilot",
-                "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Entity_Framework_Core_logo.svg/1200px-Entity_Framework_Core_logo.svg.png"
-            }
-        ]
-    },
-    {
-        "type":"Programming Languages",
-        "skills":[
-            {
-                "name":"C#",
-                "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Entity_Framework_Core_logo.svg/1200px-Entity_Framework_Core_logo.svg.png"
-            },
-            {
-                "name":"JavaScript",
-                "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Entity_Framework_Core_logo.svg/1200px-Entity_Framework_Core_logo.svg.png"
-            },
-            {
-                "name":"TypeScript",
-                "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Entity_Framework_Core_logo.svg/1200px-Entity_Framework_Core_logo.svg.png"
-            },
-            {
-                "name":"HTML5",
-                "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Entity_Framework_Core_logo.svg/1200px-Entity_Framework_Core_logo.svg.png"
-            },
-            {
-                "name":"CSS",
-                "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Entity_Framework_Core_logo.svg/1200px-Entity_Framework_Core_logo.svg.png"
-            },
-            {
-                "name":"SCSS",
-                "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Entity_Framework_Core_logo.svg/1200px-Entity_Framework_Core_logo.svg.png"
-            }
-        ]
-    },
-    {
-        "type":"Methodology",
-        "skills":[
-            {
-                "name":"Agile",
-                "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Entity_Framework_Core_logo.svg/1200px-Entity_Framework_Core_logo.svg.png"
-            },
-            {
-                "name":"SAFe Agile",
-                "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Entity_Framework_Core_logo.svg/1200px-Entity_Framework_Core_logo.svg.png"
-            },
-            {
-                "name":"Scrum",
-                "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Entity_Framework_Core_logo.svg/1200px-Entity_Framework_Core_logo.svg.png"
-            },
-            {
-                "name":"Code Review",
-                "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Entity_Framework_Core_logo.svg/1200px-Entity_Framework_Core_logo.svg.png"
-            },
-            {
-                "name":"Debugging",
-                "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Entity_Framework_Core_logo.svg/1200px-Entity_Framework_Core_logo.svg.png"
-            },
-            {
-                "name":"Documentation",
-                "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Entity_Framework_Core_logo.svg/1200px-Entity_Framework_Core_logo.svg.png"
-            },
-            {
-                "name":"Pair Programming",
-                "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Entity_Framework_Core_logo.svg/1200px-Entity_Framework_Core_logo.svg.png"
-            },
-            {
-                "name":"Test Driven Development",
-                "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Entity_Framework_Core_logo.svg/1200px-Entity_Framework_Core_logo.svg.png"
-            },
-            {
-                "name":"Behaviorial Driven Development",
-                "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Entity_Framework_Core_logo.svg/1200px-Entity_Framework_Core_logo.svg.png"
-            }
-        ]
-    }
+  {
+    "type": "Backend",
+    "skills": [
+      { "name": ".NET Core", "logoUrl": "https://cdn.simpleicons.org/dotnet" },
+      { "name": "Entity Framework Core", "logoUrl": "https://cdn.simpleicons.org/dotnet" },
+      { "name": "Swagger", "logoUrl": "https://cdn.simpleicons.org/swagger" },
+      { "name": "SQL Server", "logoUrl": "https://cdn.simpleicons.org/microsoftsqlserver" },
+      { "name": "Identity Framework Core", "logoUrl": "https://cdn.simpleicons.org/dotnet" },
+      { "name": "JWT", "logoUrl": "https://cdn.simpleicons.org/jsonwebtokens" },
+      { "name": "OAuth", "logoUrl": "https://cdn.simpleicons.org/oauth" },
+      { "name": "Redis", "logoUrl": "https://cdn.simpleicons.org/redis" }
+    ]
+  },
+  {
+    "type": "Frontend",
+    "skills": [
+      { "name": "Angular", "logoUrl": "https://cdn.simpleicons.org/angular" },
+      { "name": "Ionic", "logoUrl": "https://cdn.simpleicons.org/ionic" },
+      { "name": "RxJS", "logoUrl": "https://cdn.simpleicons.org/reactivex" },
+      { "name": "NgRx", "logoUrl": "https://cdn.simpleicons.org/ngrx" },
+      { "name": "Angular Material", "logoUrl": "https://cdn.simpleicons.org/angular" },
+      { "name": "Tailwind CSS", "logoUrl": "https://cdn.simpleicons.org/tailwindcss" },
+      { "name": "Bootstrap", "logoUrl": "https://cdn.simpleicons.org/bootstrap" }
+    ]
+  },
+  {
+    "type": "Testing",
+    "skills": [
+      { "name": "Specflow", "logoUrl": "https://cdn.simpleicons.org/cucumber" },
+      { "name": "XUnit", "logoUrl": "https://cdn.simpleicons.org/xunit" },
+      { "name": "Moq", "logoUrl": "https://cdn.simpleicons.org/dotnet" },
+      { "name": "Jasmine", "logoUrl": "https://cdn.simpleicons.org/jasmine" },
+      { "name": "Karma", "logoUrl": "https://cdn.simpleicons.org/karma" },
+      { "name": "Jest", "logoUrl": "https://cdn.simpleicons.org/jest" },
+      { "name": "Playwright", "logoUrl": "https://cdn.simpleicons.org/playwright" },
+      { "name": "Selenium", "logoUrl": "https://cdn.simpleicons.org/selenium" }
+    ]
+  },
+  {
+    "type": "DevOps",
+    "skills": [
+      { "name": "Linux", "logoUrl": "https://cdn.simpleicons.org/linux" },
+      { "name": "Docker", "logoUrl": "https://cdn.simpleicons.org/docker" },
+      { "name": "Kubernetes", "logoUrl": "https://cdn.simpleicons.org/kubernetes" },
+      { "name": "Jenkins", "logoUrl": "https://cdn.simpleicons.org/jenkins" },
+      { "name": "Azure Boards", "logoUrl": "https://cdn.simpleicons.org/azuredevops" },
+      { "name": "Azure Pipelines", "logoUrl": "https://cdn.simpleicons.org/azuredevops" },
+      { "name": "GitHub", "logoUrl": "https://cdn.simpleicons.org/github" }
+    ]
+  },
+  {
+    "type": "Tools",
+    "skills": [
+      { "name": "Visual Studio", "logoUrl": "https://cdn.simpleicons.org/visualstudio" },
+      { "name": "Visual Studio Code", "logoUrl": "https://cdn.simpleicons.org/visualstudiocode" },
+      { "name": "Azure DevOps", "logoUrl": "https://cdn.simpleicons.org/azuredevops" },
+      { "name": "Postman", "logoUrl": "https://cdn.simpleicons.org/postman" },
+      { "name": "Git", "logoUrl": "https://cdn.simpleicons.org/git" },
+      { "name": "GitHub Copilot", "logoUrl": "https://cdn.simpleicons.org/githubcopilot" }
+    ]
+  },
+  {
+    "type": "Programming Languages",
+    "skills": [
+      { "name": "C#", "logoUrl": "https://cdn.simpleicons.org/csharp" },
+      { "name": "JavaScript", "logoUrl": "https://cdn.simpleicons.org/javascript" },
+      { "name": "TypeScript", "logoUrl": "https://cdn.simpleicons.org/typescript" },
+      { "name": "HTML5", "logoUrl": "https://cdn.simpleicons.org/html5" },
+      { "name": "CSS", "logoUrl": "https://cdn.simpleicons.org/css3" },
+      { "name": "SCSS", "logoUrl": "https://cdn.simpleicons.org/sass" }
+    ]
+  },
+  {
+    "type": "Methodology",
+    "skills": [
+      { "name": "Agile", "logoUrl": "https://cdn.simpleicons.org/scrumalliance" },
+      { "name": "SAFe Agile", "logoUrl": "https://cdn.simpleicons.org/scrumalliance" },
+      { "name": "Scrum", "logoUrl": "https://cdn.simpleicons.org/scrumalliance" },
+      { "name": "Code Review", "logoUrl": "https://cdn.simpleicons.org/github" },
+      { "name": "Debugging", "logoUrl": "https://cdn.simpleicons.org/visualstudiocode" },
+      { "name": "Documentation", "logoUrl": "https://cdn.simpleicons.org/readthedocs" },
+      { "name": "Pair Programming", "logoUrl": "https://cdn.simpleicons.org/git" },
+      { "name": "Test Driven Development", "logoUrl": "https://cdn.simpleicons.org/jest" },
+      { "name": "Behavior Driven Development", "logoUrl": "https://cdn.simpleicons.org/cucumber" }
+    ]
+  }
 ]

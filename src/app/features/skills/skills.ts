@@ -14,4 +14,5 @@ import { NgOptimizedImage } from '@angular/common';
 export class Skills {
   private dataService = inject(DataService);
   skills = this.dataService.get('skills');
+
 }

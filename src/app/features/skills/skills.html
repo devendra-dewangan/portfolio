@@ -1,49 +1,46 @@
 <section class="min-h-screen bg-gray-950 text-white px-6 py-16">
 
-  <div class="max-w-6xl mx-auto">
+  <div class="max-w-6xl mx-auto text-center">
 
     <!-- Heading -->
-    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
-      Skills
+    <h2 class="text-3xl md:text-4xl font-bold mb-4">
+      What I Do
     </h2>
 
-    <!-- Skill Categories -->
-    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+    <p class="text-gray-400 max-w-2xl mx-auto mb-12">
+      I build modern web applications using scalable backend technologies and responsive frontend frameworks.
+    </p>
 
-      @for(item of skills(); track item)
+    <!-- SKILLS GRID -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+
+      @for(item of skills(); track item.type)
       {
-        <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 shadow-lg hover:shadow-blue-500/10 transition duration-300">
+        @for(skill of item.skills; track skill.name)
+        {
+          <div
+            class="group bg-gray-900 rounded-xl p-6 
+                   flex flex-col items-center justify-center
+                   shadow-lg shadow-black/20
+                   hover:-translate-y-1 hover:shadow-cyan-500/20
+                   transition duration-300">
 
-          <!-- Category Title -->
-          <h3 class="text-lg font-semibold text-blue-400 mb-4">
-            {{ item.type }}
-          </h3>
+            <!-- ICON -->
+            <img 
+              [ngSrc]="skill.logoUrl"
+              width="50"
+              height="50"
+              [alt]="skill.name"
+              class="object-contain mb-4 group-hover:scale-110 transition"
+            >
 
-          <!-- Skills Grid -->
-          <div class="grid grid-cols-3 gap-4">
-
-            @for(skill of item.skills; track skill)
-            {
-              <div class="flex flex-col items-center gap-2 p-3 bg-gray-800 rounded-lg hover:bg-gray-700 transition">
-
-                <img 
-                  [ngSrc]="skill.logoUrl"
-                  width="40"
-                  height="40"
-                  [alt]="skill.name"
-                  class="object-contain"
-                >
-
-                <span class="text-xs text-gray-300 text-center">
-                  {{ skill.name }}
-                </span>
-
-              </div>
-            }
+            <!-- NAME -->
+            <span class="text-sm text-gray-300 group-hover:text-white transition">
+              {{ skill.name }}
+            </span>
 
           </div>
-
-        </div>
+        }
       }
 
     </div>

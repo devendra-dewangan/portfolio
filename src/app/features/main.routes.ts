@@ -7,12 +7,7 @@ export const MAIN_ROUTES:Routes =[
         component:MainLayout,
         children:[
             {
-                path:'',
-                redirectTo:'home',
-                pathMatch:'full'
-            },
-            {
-                path: 'home',
+                path: '',
                 loadComponent: () => import(('./home/home')).then(c=>c.Home)
             }
         ]
