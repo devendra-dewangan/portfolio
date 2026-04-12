@@ -1,8 +1,48 @@
 [
-    {
-        "name":"proj A",
-        "completiondate":"2017-01-01",
-        "status":"completed",
-        "description":[]
-    }
+  {
+    "name": "Titan - Vital Monitoring System",
+    "completiondate": "2024-01",
+    "status": "Ongoing",
+    "image": "assets/projects/titan.png",
+    "techstack": [".NET Core", "Angular", "WebSocket", "NgRx"],
+    "github": "",
+    "live": "",
+    "description": [
+      "Developed a modern web-based application for monitoring vital signs",
+      "Implemented real-time communication using WebSockets",
+      "Built scalable REST APIs using .NET Core",
+      "Designed responsive UI using Angular with state management (NgRx)",
+      "Improved performance using lazy loading and optimized data flow"
+    ]
+  },
+  {
+    "name": "Log Analyzer Tool",
+    "completiondate": "2023-02",
+    "status": "Completed",
+    "image": "assets/projects/log-analyzer.png",
+    "techstack": [".NET Framework", "C#", "Automation"],
+    "github": "",
+    "live": "",
+    "description": [
+      "Built a tool to analyze logs from medical devices",
+      "Ensured no sensitive patient data was exposed",
+      "Automated log validation for testing workflows",
+      "Integrated tool with testing pipeline"
+    ]
+  },
+  {
+    "name": "Log Mapper Tool",
+    "completiondate": "2022-05",
+    "status": "Completed",
+    "image": "assets/projects/log-mapper.png",
+    "techstack": ["Python", "Tkinter", "API"],
+    "github": "",
+    "live": "",
+    "description": [
+      "Created a GUI tool to extract and map data from PDF files",
+      "Integrated APIs to automate testing workflows",
+      "Improved efficiency of manual testing processes",
+      "Designed user-friendly interface using Tkinter"
+    ]
+  }
 ]

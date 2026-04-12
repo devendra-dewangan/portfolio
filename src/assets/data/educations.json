@@ -1,3 +1,25 @@
 [
-    
+  {
+    "specialization": "B.Tech in Computer Science (Minor in Mathematics)",
+    "institute": "SRM University, AP - Amaravati",
+    "yearofpassing": "2022",
+    "institutelogo": "assets/logos/srm.png",
+    "description": [
+      "Graduated with strong foundation in software development and mathematics",
+      "Focused on web development using .NET Core and Angular",
+      "Worked on real-world projects and problem-solving",
+      "Gained knowledge in data structures, algorithms, and system design"
+    ]
+  },
+  {
+    "specialization": "Intermediate (Pure Science)",
+    "institute": "Shakuntal Vidyalaya",
+    "yearofpassing": "2018",
+    "institutelogo": "assets/logos/school.png",
+    "description": [
+      "Completed higher secondary education with focus on Physics, Chemistry, and Mathematics",
+      "Built analytical and logical thinking skills",
+      "Prepared foundation for engineering studies"
+    ]
+  }
 ]

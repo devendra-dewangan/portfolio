@@ -1,26 +1,49 @@
 [
-    {
-        "title": "Senior Software Developer",
-        "company": "Siemens Healthineers",
-        "location": "Bangalore,India",
-        "startdate": "2019-01-01",
-        "enddate": "2019-01-01",
-        "description":[]
-    },
-    {
-        "title": "Software Developer",
-        "company": "Siemens Healthineers",
-        "location": "Bangalore,India",
-        "startdate": "2019-01-01",
-        "enddate": "2019-01-01",
-        "description":[]
-    },
-    {
-        "title": "Software Developer Intern",
-        "company": "Siemens Healthineers",
-        "location": "Bangalore,India",
-        "startdate": "2019-01-01",
-        "enddate": "2019-01-01",
-        "description":[]
-    }
+  {
+    "title": "Full Stack Developer",
+    "company": "Siemens Healthineers",
+    "location": "Bangalore, India",
+    "startdate": "2023-03",
+    "enddate": "Present",
+    "logo": "assets/logos/siemens.png",
+    "description": [
+      "Working on Titan, a modern web-based application for vital sign monitoring devices",
+      "Developing scalable backend services using .NET Core and REST APIs",
+      "Building dynamic frontend applications using Angular with RxJS and NgRx",
+      "Implemented WebSocket for real-time communication",
+      "Improved application performance using lazy loading and optimized state management",
+      "Wrote unit tests using xUnit, NUnit, Moq, Jasmine, and Karma"
+    ]
+  },
+  {
+    "title": "Software Developer",
+    "company": "Siemens Healthineers",
+    "location": "Bangalore, India",
+    "startdate": "2022-07",
+    "enddate": "2023-02",
+    "logo": "assets/logos/siemens.png",
+    "description": [
+      "Worked on Sensis project, a vital sign monitoring system",
+      "Developed a Log Analyzer tool using .NET Framework to process device logs",
+      "Ensured sensitive data was not exposed in logs",
+      "Automated testing workflows using SITA framework",
+      "Fixed and enhanced system integration test scripts",
+      "Followed SAFe Agile methodology for development"
+    ]
+  },
+  {
+    "title": "Software Developer Intern",
+    "company": "Siemens Healthineers",
+    "location": "Bangalore, India",
+    "startdate": "2022-01",
+    "enddate": "2022-07",
+    "logo": "assets/logos/siemens.png",
+    "description": [
+      "Built a Log Mapper Tool using Python and Tkinter",
+      "Created a GUI to extract and map PDF data with APIs",
+      "Automated testing workflows and improved efficiency",
+      "Gained hands-on experience in enterprise software development",
+      "Learned industry practices and Agile workflows"
+    ]
+  }
 ]

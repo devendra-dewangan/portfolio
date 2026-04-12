@@ -1,21 +1,22 @@
 @if(profile(); as p){
 
-<section
-  class="min-h-screen w-full bg-gradient-to-br from-gray-950 via-gray-900 to-black text-white flex items-center px-6">
+<section class="min-h-screen w-full bg-gradient-to-br from-gray-950 via-gray-900 to-black text-white flex items-center px-6">
 
-  <div class="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-12 items-center">
+  <div class="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-16 items-center">
 
-    <!-- LEFT -->
-    <div class="space-y-6">
+    <!-- LEFT CONTENT -->
+    <div class="space-y-7">
 
       <!-- Small Heading -->
-      <p class="text-gray-400 text-sm tracking-widest uppercase">
-        Hello, It’s Me
+      <p class="text-gray-500 text-xs tracking-[0.3em] uppercase">
+        Welcome to my portfolio
       </p>
 
-      <!-- Name -->
+      <!-- Name + Role -->
       <h1 class="text-5xl md:text-6xl font-extrabold leading-tight">
-        <span class="text-white">{{ p.name }}</span><br />
+        <span class="bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
+          {{ p.name }}
+        </span><br />
 
         <span class="text-cyan-400 text-2xl md:text-3xl font-semibold">
           {{ p.role }}
@@ -28,60 +29,70 @@
       </p>
 
       <!-- Skills -->
-      <div class="flex flex-wrap gap-2">
+      <div class="flex flex-wrap gap-3 pt-2">
         @for(skill of p.skills; track skill){
-        <span class="px-3 py-1 text-sm bg-gray-800 border border-gray-700 rounded-full hover:bg-gray-700 transition">
+        <span class="px-4 py-1.5 text-sm bg-white/5 border border-white/10 rounded-full backdrop-blur-md hover:bg-cyan-500/10 hover:border-cyan-400 transition">
           {{ skill }}
         </span>
         }
       </div>
 
-      <!-- Social Icons -->
-      <div class="flex gap-4 text-xl text-gray-400 pt-2">
-        @for(s of p.socials; track s){
-        <a [href]="s.link" target="_blank" class=" border-cyan-400 shadow-cyan-500">
-
-          <img [ngSrc]="s.logo" width="50" height="50" [alt]="s.name"
-            class="object-contain m-1 max-w-7 hover:scale-110 transition">
-        </a>
-        }
-      </div>
-
       <!-- Buttons -->
-      <div class="flex gap-4 pt-4">
+      <div class="flex gap-4 pt-6 flex-wrap">
 
         <!-- Download CV -->
         <a [href]="p.cvLink" download
-          class="px-6 py-3 bg-cyan-500 hover:bg-cyan-600 text-black font-semibold rounded-lg shadow-lg shadow-cyan-500/30 transition">
+          class="px-6 py-3 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 
+                 hover:scale-105 transition shadow-xl shadow-cyan-500/30 font-semibold">
           Download CV
         </a>
 
-        <!-- Scroll to Projects -->
+        <!-- Projects -->
         <a routerLink="/" fragment="project"
-          class="px-6 py-3 border border-cyan-500 text-cyan-400 hover:bg-cyan-500 hover:text-black rounded-lg transition cursor-pointer">
+          class="px-6 py-3 rounded-full border border-white/20 
+                 hover:bg-white/10 transition">
           See My Work
         </a>
 
       </div>
 
+      <!-- Social Icons -->
+      <div class="flex gap-5 pt-4">
+        @for(s of p.socials; track s){
+        <a [href]="s.link" target="_blank"
+          class="p-2 rounded-full bg-white/5 border border-white/10 
+                 hover:bg-cyan-500/20 hover:scale-110 transition">
+
+          <img [ngSrc]="s.logo" width="22" height="22" [alt]="s.name"
+            class="object-contain" />
+        </a>
+        }
+      </div>
+
     </div>
 
-    <!-- RIGHT IMAGE -->
+    <!-- RIGHT IMAGE (PREMIUM LOOK) -->
     <div class="hidden md:flex justify-center items-center relative">
 
-
+      <!-- Glow -->
+      <div class="absolute w-96 h-96 bg-cyan-500/20 blur-3xl rounded-full"></div>
 
       <!-- Image Card -->
-      <div class=" hover:bg-cyan-600 font-semibold rounded-lg shadow-lg shadow-cyan-500">
+      <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10 backdrop-blur-lg">
 
-        <img ngSrc="assets/images/profile.png" alt="profile" width="1024" height="1536"
-           class="w-full max-h-screen min-h-screen object-cover 
-             brightness-105 contrast-105 
-             hover:scale-105 transition duration-500" />
+        <img ngSrc="assets/images/profile.png" 
+          alt="profile" 
+          width="1024" 
+          height="1536"
+          class="w-[350px] md:w-[420px] lg:w-[480px] 
+                 object-cover 
+                 brightness-105 contrast-110 
+                 hover:scale-105 transition duration-500" />
 
       </div>
 
     </div>
+
   </div>
 
 </section>
@@ -89,9 +100,7 @@
 }
 
 <app-about />
-
 <app-projects />
-
 <app-experience />
 <app-education />
 <app-skills />

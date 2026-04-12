@@ -4,6 +4,7 @@ export interface Experience{
     location: string,
     startdate: string,
     enddate: string,
+    logo:string,
     description:string[]
 }
 

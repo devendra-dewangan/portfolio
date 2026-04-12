@@ -1,47 +1,103 @@
-<section class="min-h-screen bg-gray-950 text-white px-6 py-16">
+<section class="bg-gradient-to-br from-gray-950 via-gray-900 to-black text-white px-6 py-24">
 
   <div class="max-w-6xl mx-auto">
 
     <!-- Heading -->
-    <h2 class="text-3xl md:text-4xl font-bold mb-10 text-center">
-      My Projects
+    <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center 
+               bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+      Featured Project
     </h2>
 
-    <!-- Grid -->
-    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+    @for(p of project(); track p; let i = $index){
+      @if(i <= 2){
 
-      @for (p of project(); track p) {
+        <div class="grid md:grid-cols-2 gap-12 items-center">
 
-        <div class="bg-gray-900 border border-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-blue-500/10 transition duration-300">
-          
-          <!-- Project Name -->
-          <h3 class="text-xl font-semibold mb-2 text-blue-400">
-            {{ p.name }}
-          </h3>
+          <!-- IMAGE -->
+          <div class="relative group">
 
-          <!-- Date + Status -->
-          <div class="flex justify-between text-sm text-gray-400 mb-4">
-            <span>{{ p.completiondate }}</span>
-            <span class="px-2 py-1 rounded bg-gray-800 border border-gray-700 text-xs">
-              {{ p.status }}
-            </span>
+            <img 
+              [ngSrc]="p.image"
+              width="600"
+              height="400"
+              class="w-full rounded-2xl object-cover shadow-2xl
+                     group-hover:scale-105 transition duration-500"
+            />
+
+            <!-- Glow -->
+            <div class="absolute inset-0 bg-cyan-500/10 blur-3xl opacity-30"></div>
+
           </div>
 
-          <!-- Description -->
-          <ul class="space-y-2 text-gray-300 text-sm">
-            @for (d of p.description; track d) {
-              <li class="flex items-start gap-2">
-                <span class="text-blue-500">•</span>
-                <span>{{ d }}</span>
-              </li>
+          <!-- CONTENT -->
+          <div class="space-y-6">
+
+            <!-- Company -->
+            @if(p.company){
+              <span class="text-xs px-3 py-1 bg-white/5 border border-white/10 rounded-full text-gray-400">
+                {{ p.company }}
+              </span>
             }
-          </ul>
+
+            <!-- Name -->
+            <h3 class="text-3xl md:text-4xl font-bold text-cyan-400">
+              {{ p.name }}
+            </h3>
+
+            <!-- Meta -->
+            <div class="flex gap-4 text-sm text-gray-400">
+              <span>{{ p.completiondate }}</span>
+              <span class="px-2 py-1 bg-white/5 border border-white/10 rounded">
+                {{ p.status }}
+              </span>
+            </div>
+
+            <!-- Description -->
+            <ul class="space-y-2 text-gray-300">
+              @for(d of p.description; track d){
+                <li class="flex gap-2">
+                  <span class="text-cyan-400">▹</span>
+                  <span>{{ d }}</span>
+                </li>
+              }
+            </ul>
+
+            <!-- Tech Stack -->
+            @if(p.techstack){
+              <div class="flex flex-wrap gap-2 pt-2">
+                @for(t of p.techstack; track t){
+                  <span class="px-3 py-1 text-xs bg-cyan-500/10 border border-cyan-500/20 rounded-full">
+                    {{ t }}
+                  </span>
+                }
+              </div>
+            }
+
+            <!-- Buttons -->
+            <div class="flex gap-4 pt-4">
+
+              @if(p.github){
+                <a [href]="p.github" target="_blank"
+                   class="px-5 py-2 rounded-full bg-white/10 border border-white/20 hover:bg-white/20 transition">
+                  GitHub
+                </a>
+              }
+
+              @if(p.live){
+                <a [href]="p.live" target="_blank"
+                   class="px-5 py-2 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 text-black font-semibold hover:scale-105 transition">
+                  Live Demo
+                </a>
+              }
+
+            </div>
+
+          </div>
 
         </div>
 
       }
-
-    </div>
+    }
 
   </div>
 
