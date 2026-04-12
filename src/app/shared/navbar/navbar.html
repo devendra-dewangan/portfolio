@@ -1,6 +1,6 @@
 @if(profile(); as p)
 {
-  <nav class="fixed top-0 left-0 w-full bg-gray-950/80 backdrop-blur border-b border-gray-800 z-50">
+  <nav class="fixed top-0 left-0 w-full backdrop-blur border-b border-gray-800 z-50">
     
     <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
@@ -61,13 +61,13 @@
     @if(isOpen){
         <div class="md:hidden px-6 pb-4 space-y-3 text-sm">
     
-          <a routerLink="/" class="block text-gray-300" (click)="isOpen = !isOpen">/</a>
+          <a routerLink="/" class="block text-gray-300" (click)="isOpen = !isOpen">Home</a>
           <a routerLink="/" routerLink="about" class="block text-gray-300" (click)="isOpen = !isOpen">About</a>
           <a routerLink="/" fragment="project" class="block text-gray-300" (click)="isOpen = !isOpen">Project</a>
           <a routerLink="/" fragment="experience" class="block text-gray-300" (click)="isOpen = !isOpen">Experience</a>
-          <a routerLink="/" fragment="education" class="block text-gray-300" (click)="isOpen = !isOpen">Project</a>
-          <a routerLink="/" fragment="skills" class="block text-gray-300" (click)="isOpen = !isOpen">Experience</a>
-          <a routerLink="/" fragment="contact" class="block text-gray-300" (click)="isOpen = !isOpen">Experience</a>
+          <a routerLink="/" fragment="education" class="block text-gray-300" (click)="isOpen = !isOpen">Education</a>
+          <a routerLink="/" fragment="skills" class="block text-gray-300" (click)="isOpen = !isOpen">Skills</a>
+          <a routerLink="/" fragment="contact" class="block text-gray-300" (click)="isOpen = !isOpen">Contact</a>
         </div>
     }
     <!-- Mobile Menu -->

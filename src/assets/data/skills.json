@@ -2,87 +2,240 @@
   {
     "type": "Backend",
     "skills": [
-      { "name": ".NET Core", "logoUrl": "https://cdn.simpleicons.org/dotnet" },
-      { "name": "Entity Framework Core", "logoUrl": "https://cdn.simpleicons.org/dotnet" },
-      { "name": "Swagger", "logoUrl": "https://cdn.simpleicons.org/swagger" },
-      { "name": "SQL Server", "logoUrl": "https://cdn.simpleicons.org/microsoftsqlserver" },
-      { "name": "Identity Framework Core", "logoUrl": "https://cdn.simpleicons.org/dotnet" },
-      { "name": "JWT", "logoUrl": "https://cdn.simpleicons.org/jsonwebtokens" },
-      { "name": "OAuth", "logoUrl": "https://cdn.simpleicons.org/oauth" },
-      { "name": "Redis", "logoUrl": "https://cdn.simpleicons.org/redis" }
+      {
+        "name": ".NET Core",
+        "logoUrl": "https://cdn.simpleicons.org/dotnet/white"
+      },
+      {
+        "name": "Entity Framework Core",
+        "logoUrl": "https://cdn.simpleicons.org/dotnet/white"
+      },
+      {
+        "name": "Swagger",
+        "logoUrl": "https://cdn.simpleicons.org/swagger/white"
+      },
+      {
+        "name": "SQL Server",
+        "logoUrl": "https://cdn.simpleicons.org/databricks/white"
+      },
+      {
+        "name": "Identity Framework Core",
+        "logoUrl": "https://cdn.simpleicons.org/dotnet/white"
+      },
+      {
+        "name": "JWT",
+        "logoUrl": "https://cdn.simpleicons.org/jsonwebtokens/white"
+      },
+      {
+        "name": "OAuth",
+        "logoUrl": "https://cdn.simpleicons.org/auth0/white"
+      },
+      {
+        "name": "Redis",
+        "logoUrl": "https://cdn.simpleicons.org/redis/white"
+      }
     ]
   },
   {
     "type": "Frontend",
     "skills": [
-      { "name": "Angular", "logoUrl": "https://cdn.simpleicons.org/angular" },
-      { "name": "Ionic", "logoUrl": "https://cdn.simpleicons.org/ionic" },
-      { "name": "RxJS", "logoUrl": "https://cdn.simpleicons.org/reactivex" },
-      { "name": "NgRx", "logoUrl": "https://cdn.simpleicons.org/ngrx" },
-      { "name": "Angular Material", "logoUrl": "https://cdn.simpleicons.org/angular" },
-      { "name": "Tailwind CSS", "logoUrl": "https://cdn.simpleicons.org/tailwindcss" },
-      { "name": "Bootstrap", "logoUrl": "https://cdn.simpleicons.org/bootstrap" }
+      {
+        "name": "Angular",
+        "logoUrl": "https://cdn.simpleicons.org/angular/white"
+      },
+      {
+        "name": "Ionic",
+        "logoUrl": "https://cdn.simpleicons.org/ionic"
+      },
+      {
+        "name": "RxJS",
+        "logoUrl": "https://cdn.simpleicons.org/reactivex"
+      },
+      {
+        "name": "NgRx",
+        "logoUrl": "https://cdn.simpleicons.org/ngrx/white"
+      },
+      {
+        "name": "Angular Material",
+        "logoUrl": "https://cdn.simpleicons.org/angular/white"
+      },
+      {
+        "name": "Tailwind CSS",
+        "logoUrl": "https://cdn.simpleicons.org/tailwindcss/white"
+      },
+      {
+        "name": "Bootstrap",
+        "logoUrl": "https://cdn.simpleicons.org/bootstrap/white"
+      }
     ]
   },
   {
     "type": "Testing",
     "skills": [
-      { "name": "Specflow", "logoUrl": "https://cdn.simpleicons.org/cucumber" },
-      { "name": "XUnit", "logoUrl": "https://cdn.simpleicons.org/xunit" },
-      { "name": "Moq", "logoUrl": "https://cdn.simpleicons.org/dotnet" },
-      { "name": "Jasmine", "logoUrl": "https://cdn.simpleicons.org/jasmine" },
-      { "name": "Karma", "logoUrl": "https://cdn.simpleicons.org/karma" },
-      { "name": "Jest", "logoUrl": "https://cdn.simpleicons.org/jest" },
-      { "name": "Playwright", "logoUrl": "https://cdn.simpleicons.org/playwright" },
-      { "name": "Selenium", "logoUrl": "https://cdn.simpleicons.org/selenium" }
+      {
+        "name": "Specflow",
+        "logoUrl": "https://cdn.simpleicons.org/cucumber"
+      },
+      {
+        "name": "XUnit",
+        "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"
+      },
+      {
+        "name": "Moq",
+        "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"
+      },
+      {
+        "name": "Jasmine",
+        "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jasmine/jasmine-original.svg"
+      },
+      {
+        "name": "Karma",
+        "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
+      },
+      {
+        "name": "Jest",
+        "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg"
+      },
+      {
+        "name": "Playwright",
+        "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/playwright/playwright-original.svg"
+      },
+      {
+        "name": "Selenium",
+        "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg"
+      }
     ]
   },
   {
     "type": "DevOps",
     "skills": [
-      { "name": "Linux", "logoUrl": "https://cdn.simpleicons.org/linux" },
-      { "name": "Docker", "logoUrl": "https://cdn.simpleicons.org/docker" },
-      { "name": "Kubernetes", "logoUrl": "https://cdn.simpleicons.org/kubernetes" },
-      { "name": "Jenkins", "logoUrl": "https://cdn.simpleicons.org/jenkins" },
-      { "name": "Azure Boards", "logoUrl": "https://cdn.simpleicons.org/azuredevops" },
-      { "name": "Azure Pipelines", "logoUrl": "https://cdn.simpleicons.org/azuredevops" },
-      { "name": "GitHub", "logoUrl": "https://cdn.simpleicons.org/github" }
+      {
+        "name": "Linux",
+        "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+      },
+      {
+        "name": "Docker",
+        "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+      },
+      {
+        "name": "Kubernetes",
+        "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg"
+      },
+      {
+        "name": "Jenkins",
+        "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg"
+      },
+      {
+        "name": "Azure Boards",
+        "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg"
+      },
+      {
+        "name": "Azure Pipelines",
+        "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg"
+      },
+      {
+        "name": "GitHub",
+        "logoUrl": "https://cdn.simpleicons.org/github/white"
+      }
     ]
   },
   {
     "type": "Tools",
     "skills": [
-      { "name": "Visual Studio", "logoUrl": "https://cdn.simpleicons.org/visualstudio" },
-      { "name": "Visual Studio Code", "logoUrl": "https://cdn.simpleicons.org/visualstudiocode" },
-      { "name": "Azure DevOps", "logoUrl": "https://cdn.simpleicons.org/azuredevops" },
-      { "name": "Postman", "logoUrl": "https://cdn.simpleicons.org/postman" },
-      { "name": "Git", "logoUrl": "https://cdn.simpleicons.org/git" },
-      { "name": "GitHub Copilot", "logoUrl": "https://cdn.simpleicons.org/githubcopilot" }
+      {
+        "name": "Visual Studio",
+        "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg"
+      },
+      {
+        "name": "Visual Studio Code",
+        "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+      },
+      {
+        "name": "Azure DevOps",
+        "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg"
+      },
+      {
+        "name": "Postman",
+        "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg"
+      },
+      {
+        "name": "Git",
+        "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+      },
+      {
+        "name": "GitHub Copilot",
+        "logoUrl": "https://cdn.simpleicons.org/githubcopilot/white"
+      }
     ]
   },
   {
     "type": "Programming Languages",
     "skills": [
-      { "name": "C#", "logoUrl": "https://cdn.simpleicons.org/csharp" },
-      { "name": "JavaScript", "logoUrl": "https://cdn.simpleicons.org/javascript" },
-      { "name": "TypeScript", "logoUrl": "https://cdn.simpleicons.org/typescript" },
-      { "name": "HTML5", "logoUrl": "https://cdn.simpleicons.org/html5" },
-      { "name": "CSS", "logoUrl": "https://cdn.simpleicons.org/css3" },
-      { "name": "SCSS", "logoUrl": "https://cdn.simpleicons.org/sass" }
+      {
+        "name": "C#",
+        "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+      },
+      {
+        "name": "JavaScript",
+        "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+      },
+      {
+        "name": "TypeScript",
+        "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+      },
+      {
+        "name": "HTML5",
+        "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+      },
+      {
+        "name": "CSS",
+        "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+      },
+      {
+        "name": "SCSS",
+        "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
+      }
     ]
   },
   {
     "type": "Methodology",
     "skills": [
-      { "name": "Agile", "logoUrl": "https://cdn.simpleicons.org/scrumalliance" },
-      { "name": "SAFe Agile", "logoUrl": "https://cdn.simpleicons.org/scrumalliance" },
-      { "name": "Scrum", "logoUrl": "https://cdn.simpleicons.org/scrumalliance" },
-      { "name": "Code Review", "logoUrl": "https://cdn.simpleicons.org/github" },
-      { "name": "Debugging", "logoUrl": "https://cdn.simpleicons.org/visualstudiocode" },
-      { "name": "Documentation", "logoUrl": "https://cdn.simpleicons.org/readthedocs" },
-      { "name": "Pair Programming", "logoUrl": "https://cdn.simpleicons.org/git" },
-      { "name": "Test Driven Development", "logoUrl": "https://cdn.simpleicons.org/jest" },
-      { "name": "Behavior Driven Development", "logoUrl": "https://cdn.simpleicons.org/cucumber" }
+      {
+        "name": "Agile",
+        "logoUrl": "https://cdn.simpleicons.org/scrumalliance"
+      },
+      {
+        "name": "SAFe Agile",
+        "logoUrl": "https://cdn.simpleicons.org/scrumalliance"
+      },
+      {
+        "name": "Scrum",
+        "logoUrl": "https://cdn.simpleicons.org/scrumalliance"
+      },
+      {
+        "name": "Code Review",
+        "logoUrl": "https://cdn.simpleicons.org/github/white"
+      },
+      {
+        "name": "Debugging",
+        "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+      },
+      {
+        "name": "Documentation",
+        "logoUrl": "https://cdn.simpleicons.org/readthedocs/"
+      },
+      {
+        "name": "Pair Programming",
+        "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+      },
+      {
+        "name": "Test Driven Development",
+        "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg"
+      },
+      {
+        "name": "Behavior Driven Development",
+        "logoUrl": "https://cdn.simpleicons.org/cucumber"
+      }
     ]
   }
 ]

@@ -1,6 +1,7 @@
 export interface Social{
     name:string,
-    link:string   
+    link:string,
+    logo:string   
 }
 
 export interface About{

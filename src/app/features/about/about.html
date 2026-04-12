@@ -1,33 +1,60 @@
 @if(profile(); as p){
-  <section class="min-h-screen bg-gray-950 text-white px-6 py-16 flex items-center">
+<section class="min-h-screen bg-gray-950 text-white flex items-center justify-center px-6">
 
-    <div class="max-w-4xl mx-auto text-center space-y-6">
+  <div class="m-10 max-w-full max-h-full w-full grid md:grid-cols-2 rounded-lg overflow-hidden shadow-xl">
+
+    <!-- LEFT SIDE (Profile Card) -->
+    <div class="bg-gray-900 p-8 flex flex-col items-center text-center space-y-4">
+
+      <!-- Profile Image -->
+      <img 
+        ngSrc="assets/images/profile2.png" 
+        alt="profile"
+        height="1"
+        width="1"
+        class="w-2xl max-h-fit object-cover border-cyan-100 shadow-cyan-500"
+      />
+
+      <!-- Name -->
+      <h3 class="text-xl font-semibold">
+        {{ p.name }}
+      </h3>
+
+      <!-- Title -->
+      <p class="text-gray-400 text-sm">
+        {{ p.title }}
+      </p>
+
+      <!-- Social Icons -->
+      <div class="flex gap-4 pt-2">
+        <a href="#" class="hover:text-blue-400">🌐</a>
+        <a href="#" class="hover:text-blue-400">🐦</a>
+        <a href="#" class="hover:text-blue-400">💼</a>
+        <a href="#" class="hover:text-blue-400">🔗</a>
+      </div>
+
+    </div>
+
+    <!-- RIGHT SIDE (About Section) -->
+    <div class="bg-gray-800 p-10 flex flex-col justify-center space-y-6">
 
       <!-- Heading -->
-      <h2 class="text-3xl md:text-4xl font-bold">
+      <h2 class="text-3xl font-bold">
         About Me
       </h2>
 
-      <!-- Name -->
-      <p class="text-lg text-gray-300">
-        Hi, I am 
-        <span class="text-blue-400 font-semibold">
-          {{ p.name }}
-        </span>
-      </p>
-
       <!-- About Content -->
-      <div class="space-y-4 text-gray-400 leading-relaxed">
-
+      <div class="space-y-4 text-gray-300 leading-relaxed">
         @for(a of p.about; track a){
           <p class="text-base md:text-lg">
             {{ a.description }}
           </p>
         }
-
       </div>
 
     </div>
 
-  </section>
+  </div>
+
+</section>
 }
