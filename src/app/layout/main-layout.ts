@@ -11,7 +11,6 @@ import { Loader } from '../shared/loader/loader';
     RouterOutlet,
     Navbar,
     Footer,
-    Loader
   ],
   templateUrl: './main-layout.html',
   styleUrl: './main-layout.css',

@@ -1,15 +1,8 @@
 <div class="flex flex-col">
-
   <app-navbar />
 
   <main class="bg-gray-950 text-white">
-    @if(loading()) {
-      <app-loader />
-    } @else {
       <router-outlet />
-    }
   </main>
-
   <app-footer />
-
 </div>

@@ -7,9 +7,7 @@ import { NgOptimizedImage } from '@angular/common';
   imports: [NgOptimizedImage],
   templateUrl: './projects.html',
   styleUrl: './projects.css',
-  host:{
-    id:"project"
-  }
+  standalone:true
 })
 export class Projects {
   private dataService = inject(DataService);

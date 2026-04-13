@@ -8,7 +8,7 @@ export const MAIN_ROUTES:Routes =[
         children:[
             {
                 path: '',
-                loadComponent: () => import(('./home/home')).then(c=>c.Home)
+                loadComponent: () => import(('./dashboard/dashboard')).then(c=>c.Dashboard)
             }
         ]
     }

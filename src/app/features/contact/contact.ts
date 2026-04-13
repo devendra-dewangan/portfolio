@@ -7,9 +7,7 @@ import { NgOptimizedImage } from '@angular/common';
   imports: [NgOptimizedImage],
   templateUrl: './contact.html',
   styleUrl: './contact.css',
-  host:{
-    id:"contact"
-  }
+  standalone : true
 })
 export class Contact {
   private dataService = inject(DataService);
