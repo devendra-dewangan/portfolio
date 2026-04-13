@@ -5,7 +5,8 @@
     <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
       <!-- Logo -->
-      <h2 class="text-xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+      <h2 class="text-xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent 
+                 animate-nav opacity-0 [animation-delay:0.1s]">
         {{ p.name.split(" ")[0] }}
       </h2>
 
@@ -13,43 +14,50 @@
       <div class="hidden md:flex items-center gap-8 text-sm font-medium">
 
         <a routerLink="/" routerLinkActive="text-cyan-400"
-          class="relative text-gray-300 hover:text-cyan-400 transition group">
+          class="relative text-gray-300 hover:text-cyan-400 transition group 
+                 animate-nav opacity-0 [animation-delay:0.2s]">
           Home
           <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-cyan-400 transition-all group-hover:w-full"></span>
         </a>
 
         <a routerLink="/" fragment="about" routerLinkActive="text-cyan-400"
-          class="relative text-gray-300 hover:text-cyan-400 transition group">
+          class="relative text-gray-300 hover:text-cyan-400 transition group 
+                 animate-nav opacity-0 [animation-delay:0.3s]">
           About
           <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-cyan-400 transition-all group-hover:w-full"></span>
         </a>
 
         <a routerLink="/" fragment="project" routerLinkActive="text-cyan-400"
-          class="relative text-gray-300 hover:text-cyan-400 transition group">
+          class="relative text-gray-300 hover:text-cyan-400 transition group 
+                 animate-nav opacity-0 [animation-delay:0.4s]">
           Projects
           <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-cyan-400 transition-all group-hover:w-full"></span>
         </a>
 
         <a routerLink="/" fragment="experience" routerLinkActive="text-cyan-400"
-          class="relative text-gray-300 hover:text-cyan-400 transition group">
+          class="relative text-gray-300 hover:text-cyan-400 transition group 
+                 animate-nav opacity-0 [animation-delay:0.5s]">
           Experience
           <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-cyan-400 transition-all group-hover:w-full"></span>
         </a>
 
         <a routerLink="/" fragment="education" routerLinkActive="text-cyan-400"
-          class="relative text-gray-300 hover:text-cyan-400 transition group">
+          class="relative text-gray-300 hover:text-cyan-400 transition group 
+                 animate-nav opacity-0 [animation-delay:0.6s]">
           Education
           <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-cyan-400 transition-all group-hover:w-full"></span>
         </a>
 
         <a routerLink="/" fragment="skills" routerLinkActive="text-cyan-400"
-          class="relative text-gray-300 hover:text-cyan-400 transition group">
+          class="relative text-gray-300 hover:text-cyan-400 transition group 
+                 animate-nav opacity-0 [animation-delay:0.7s]">
           Skills
           <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-cyan-400 transition-all group-hover:w-full"></span>
         </a>
 
         <a routerLink="/" fragment="contact" routerLinkActive="text-cyan-400"
-          class="relative text-gray-300 hover:text-cyan-400 transition group">
+          class="relative text-gray-300 hover:text-cyan-400 transition group 
+                 animate-nav opacity-0 [animation-delay:0.8s]">
           Contact
           <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-cyan-400 transition-all group-hover:w-full"></span>
         </a>
@@ -58,7 +66,8 @@
 
       <!-- Mobile Button -->
       <button 
-        class="md:hidden text-gray-300 text-2xl"
+        class="md:hidden text-gray-300 text-2xl 
+               animate-nav opacity-0 [animation-delay:0.9s]"
         (click)="isOpen = !isOpen">
         ☰
       </button>
@@ -72,37 +81,44 @@
         <div class="bg-white/5 backdrop-blur-lg border border-white/10 rounded-xl p-4 space-y-3 shadow-xl">
 
           <a routerLink="/" (click)="isOpen=false"
-            class="block px-3 py-2 rounded-lg hover:bg-cyan-500/10 transition">
+            class="block px-3 py-2 rounded-lg hover:bg-cyan-500/10 transition 
+                   animate-nav opacity-0 [animation-delay:0.1s]">
             Home
           </a>
 
           <a routerLink="/" fragment="about" (click)="isOpen=false"
-            class="block px-3 py-2 rounded-lg hover:bg-cyan-500/10 transition">
+            class="block px-3 py-2 rounded-lg hover:bg-cyan-500/10 transition 
+                   animate-nav opacity-0 [animation-delay:0.2s]">
             About
           </a>
 
           <a routerLink="/" fragment="project" (click)="isOpen=false"
-            class="block px-3 py-2 rounded-lg hover:bg-cyan-500/10 transition">
+            class="block px-3 py-2 rounded-lg hover:bg-cyan-500/10 transition 
+                   animate-nav opacity-0 [animation-delay:0.3s]">
             Projects
           </a>
 
           <a routerLink="/" fragment="experience" (click)="isOpen=false"
-            class="block px-3 py-2 rounded-lg hover:bg-cyan-500/10 transition">
+            class="block px-3 py-2 rounded-lg hover:bg-cyan-500/10 transition 
+                   animate-nav opacity-0 [animation-delay:0.4s]">
             Experience
           </a>
 
           <a routerLink="/" fragment="education" (click)="isOpen=false"
-            class="block px-3 py-2 rounded-lg hover:bg-cyan-500/10 transition">
+            class="block px-3 py-2 rounded-lg hover:bg-cyan-500/10 transition 
+                   animate-nav opacity-0 [animation-delay:0.5s]">
             Education
           </a>
 
           <a routerLink="/" fragment="skills" (click)="isOpen=false"
-            class="block px-3 py-2 rounded-lg hover:bg-cyan-500/10 transition">
+            class="block px-3 py-2 rounded-lg hover:bg-cyan-500/10 transition 
+                   animate-nav opacity-0 [animation-delay:0.6s]">
             Skills
           </a>
 
           <a routerLink="/" fragment="contact" (click)="isOpen=false"
-            class="block px-3 py-2 rounded-lg hover:bg-cyan-500/10 transition">
+            class="block px-3 py-2 rounded-lg hover:bg-cyan-500/10 transition 
+                   animate-nav opacity-0 [animation-delay:0.7s]">
             Contact
           </a>
 

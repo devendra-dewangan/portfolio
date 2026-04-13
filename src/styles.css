@@ -4,3 +4,135 @@
 html {
   scroll-behavior: smooth;
 }
+/* ===== Slide Left ===== */
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ===== Slide Right ===== */
+@keyframes slideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ===== Slide Up ===== */
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Bubble (Pop + Blur) ===== */
+@keyframes bubbleIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.7) translateY(40px);
+    filter: blur(10px);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.05) translateY(-5px);
+    filter: blur(0);
+  }
+  100% {
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* ===== From Front (Z-depth feel) ===== */
+@keyframes zoomIn3D {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+    filter: blur(12px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
+  }
+}
+
+/* ===== Floating Idle ===== */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+/* ===== Classes ===== */
+.animate-slide-left {
+  animation: slideLeft 0.8s ease-out forwards;
+}
+
+.animate-slide-right {
+  animation: slideRight 0.8s ease-out forwards;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.8s ease-out forwards;
+}
+
+.animate-bubble {
+  animation: bubbleIn 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.animate-zoom {
+  animation: zoomIn3D 0.9s ease-out forwards;
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Slide Down */
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Class */
+.animate-slide-down {
+  animation: slideDown 0.5s ease-out forwards;
+}
+
+/* NAVBAR STAGGER ANIMATION */
+@keyframes navFadeDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+    filter: blur(6px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+.animate-nav {
+  animation: navFadeDown 0.5s ease-out forwards;
+}
