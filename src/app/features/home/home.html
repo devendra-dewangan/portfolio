@@ -1,11 +1,11 @@
 @if(profile(); as p){
 
-<section class="min-h-screen w-full bg-gradient-to-br from-gray-950 via-gray-900 to-black text-white flex items-center px-6">
+<section class="h-screen w-full grid md:grid-cols-2 bg-gradient-to-br from-gray-950 via-gray-900 to-black text-white">
 
-  <div class="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-16 items-center">
+  <!-- LEFT SIDE -->
+  <div class="flex items-center px-6 md:px-12 lg:px-20">
 
-    <!-- LEFT CONTENT -->
-    <div class="space-y-7">
+    <div class="space-y-7 max-w-xl">
 
       <!-- Small Heading -->
       <p class="text-gray-500 text-xs tracking-[0.3em] uppercase">
@@ -24,16 +24,17 @@
       </h1>
 
       <!-- Summary -->
-      <p class="text-gray-300 text-lg leading-relaxed max-w-xl">
+      <p class="text-gray-300 text-lg leading-relaxed">
         {{ p.summary }}
       </p>
 
       <!-- Skills -->
       <div class="flex flex-wrap gap-3 pt-2">
         @for(skill of p.skills; track skill){
-        <span class="px-4 py-1.5 text-sm bg-white/5 border border-white/10 rounded-full backdrop-blur-md hover:bg-cyan-500/10 hover:border-cyan-400 transition">
-          {{ skill }}
-        </span>
+          <span class="px-4 py-1.5 text-sm bg-white/5 border border-white/10 rounded-full backdrop-blur-md 
+                       hover:bg-cyan-500/10 hover:border-cyan-400 transition">
+            {{ skill }}
+          </span>
         }
       </div>
 
@@ -59,39 +60,34 @@
       <!-- Social Icons -->
       <div class="flex gap-5 pt-4">
         @for(s of p.socials; track s){
-        <a [href]="s.link" target="_blank"
-          class="p-2 rounded-full bg-white/5 border border-white/10 
-                 hover:bg-cyan-500/20 hover:scale-110 transition">
+          <a [href]="s.link" target="_blank"
+            class="p-2 rounded-full bg-white/5 border border-white/10 
+                   hover:bg-cyan-500/20 hover:scale-110 transition">
 
-          <img [ngSrc]="s.logo" width="22" height="22" [alt]="s.name"
-            class="object-contain" />
-        </a>
+            <img [ngSrc]="s.logo" width="22" height="22" [alt]="s.name"
+              class="object-contain" />
+          </a>
         }
       </div>
 
     </div>
 
-    <!-- RIGHT IMAGE (PREMIUM LOOK) -->
-    <div class="hidden md:flex justify-center items-center relative">
+  </div>
 
-      <!-- Glow -->
-      <div class="absolute w-96 h-96 bg-cyan-500/20 blur-3xl rounded-full"></div>
+  <!-- RIGHT SIDE (FULL IMAGE) -->
+  <div class="hidden md:block relative h-screen">
 
-      <!-- Image Card -->
-      <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10 backdrop-blur-lg">
-
-        <img ngSrc="assets/images/profile.png" 
-          alt="profile" 
-          width="1024" 
-          height="1536"
-          class="w-[350px] md:w-[420px] lg:w-[480px] 
-                 object-cover 
-                 brightness-105 contrast-110 
-                 hover:scale-105 transition duration-500" />
-
-      </div>
-
-    </div>
+    <!-- IMAGE -->
+    <img 
+      ngSrc="assets/images/profile.png"
+      alt="profile"
+      width="1024"
+      height="1536"
+      class="w-full h-full object-cover 
+             brightness-105 contrast-110 
+             hover:scale-105 transition duration-700"
+    />
+    <div class="absolute inset-0 from-black/50 via-black/20 to-transparent"></div>
 
   </div>
 

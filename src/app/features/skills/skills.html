@@ -27,7 +27,7 @@
           <!-- SKILLS GRID -->
           <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
 
-            @for(skill of item.skills; track skill.name)
+            @for(skill of (isExpanded(item.type) ? item.skills : item.skills.slice(0,4)); track skill.name)
             {
               <div
                 class="group relative rounded-2xl p-6 
@@ -66,6 +66,24 @@
             }
 
           </div>
+
+          <!-- SHOW MORE BUTTON -->
+          @if(item.skills.length > 4){
+            <div class="mt-6 text-center">
+
+              <button 
+                (click)="toggleSkills(item.type)"
+                class="px-6 py-2 rounded-full text-sm 
+                       bg-white/5 border border-white/10 
+                       hover:bg-cyan-500/10 hover:border-cyan-400
+                       transition">
+
+                {{ isExpanded(item.type) ? 'Show Less' : 'Show More' }}
+
+              </button>
+
+            </div>
+          }
 
         </div>
       }

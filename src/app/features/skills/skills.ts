@@ -14,5 +14,13 @@ import { NgOptimizedImage } from '@angular/common';
 export class Skills {
   private dataService = inject(DataService);
   skills = this.dataService.get('skills');
+  showAllSkills: Record<string, boolean> = {};
 
+toggleSkills(type: string) {
+  this.showAllSkills[type] = !this.showAllSkills[type];
+}
+
+isExpanded(type: string): boolean {
+  return this.showAllSkills[type] ?? false;
+}
 }

@@ -1,9 +1,10 @@
 import { Component, inject } from '@angular/core';
 import { DataService } from '../../core/service/data.service';
+import { NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-education',
-  imports: [],
+  imports: [NgOptimizedImage],
   templateUrl: './education.html',
   styleUrl: './education.css',
   host:{

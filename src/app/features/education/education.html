@@ -22,7 +22,7 @@
 
           <div class="relative grid md:grid-cols-2 items-center">
 
-            <!-- LEFT / RIGHT CARD -->
+            <!-- CARD -->
             <div class="md:pr-12"
                  [class.md:text-right]="i % 2 === 0"
                  [class.md:order-1]="i % 2 !== 0">
@@ -32,12 +32,14 @@
                           hover:-translate-y-2 transition duration-300">
 
                 <!-- Top Section -->
-                <div class="flex items-center gap-4 mb-4"
+                <div class="flex items-center gap-4"
                      [class.md:flex-row-reverse]="i % 2 === 0">
 
                   <!-- Logo -->
                   <img 
-                    [src]="e.institutelogo" 
+                    [ngSrc]="e.institutelogo" 
+                    width="48"
+                    height="48"
                     [alt]="e.institute"
                     class="w-12 h-12 object-contain rounded-md bg-white p-1"
                   >
@@ -55,8 +57,9 @@
                 </div>
 
                 <!-- Meta -->
-                <div class="flex justify-between text-sm text-gray-400 mb-4"
+                <div class="flex justify-between text-sm text-gray-400 mt-4"
                      [class.md:flex-row-reverse]="i % 2 === 0">
+
                   <span>{{ e.yearofpassing }}</span>
 
                   @if(e.percentage){
@@ -64,6 +67,7 @@
                       {{ e.percentage }}
                     </span>
                   }
+
                 </div>
 
               </div>
