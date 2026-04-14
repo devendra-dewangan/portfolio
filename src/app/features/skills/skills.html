@@ -29,7 +29,7 @@
 
             @for(skill of (isExpanded(item.type) ? item.skills : item.skills.slice(0,4)); track skill.name)
             {
-              <div
+              <div appReveal="animate-slide-down"
                 class="group relative rounded-2xl p-6 
                        bg-white/5 backdrop-blur-xl border border-white/10
                        flex flex-col items-center justify-center

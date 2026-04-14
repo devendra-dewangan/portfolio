@@ -1,16 +1,16 @@
 @if(profile(); as p){
-<section class="min-h-screen bg-gradient-to-br from-gray-950 via-gray-900 to-black text-white flex items-center justify-center px-6">
+<section class="min-h-screen from-gray-950 via-gray-900 to-black text-white flex items-center justify-center px-6">
 
   <div class="max-w-6xl w-full grid md:grid-cols-2 rounded-2xl overflow-hidden shadow-2xl backdrop-blur-lg border border-white/10">
 
     <!-- LEFT: PROFILE CARD -->
-    <div class="relative animate-slide-left bg-gradient-to-b from-gray-900 to-gray-800 p-10 flex flex-col items-center text-center">
+    <div class="relative from-gray-900 to-gray-800 p-10 flex flex-col items-center text-center">
 
       <!-- Glow Background -->
       <div class="absolute w-72 h-72 bg-cyan-500/20 blur-3xl rounded-full top-10"></div>
 
       <!-- Profile Image (BIG + CENTERED) -->
-      <div class="relative z-10 flex justify-center w-full">
+      <div appReveal="animate-slide-down" delay="0.2" class="relative z-10 flex justify-center w-full">
         <img 
           ngSrc="assets/images/profile2.png" 
           alt="profile"
@@ -23,22 +23,22 @@
       </div>
 
       <!-- Name -->
-      <h3 class="relative z-10 text-2xl font-semibold mt-6">
+      <h3 appReveal="animate-slide-up" delay="0.2" class="relative z-10 text-2xl font-semibold mt-6">
         {{ p.name }}
       </h3>
 
       <!-- Title -->
-      <p class="relative z-10 text-gray-400 text-sm tracking-wide">
+      <p appReveal="animate-slide-up" delay="0.3" class="relative z-10 text-gray-400 text-sm tracking-wide">
         {{ p.title }}
       </p>
 
       <!-- Divider -->
-      <div class="w-20 h-[2px] bg-gradient-to-r from-cyan-400 to-purple-500 my-5"></div>
+      <div class="w-20 from-cyan-400 to-purple-500 my-5"></div>
 
       
       <div class="relative z-10 flex gap-4 text-xl text-gray-400 pt-2">
-        @for(s of p.socials; track s){
-        <a [href]="s.link" target="_blank" class=" border-cyan-400 shadow-cyan-500">
+        @for(s of p.socials; track s;let i = $index){
+        <a [href]="s.link" target="_blank" class=" border-cyan-400 shadow-cyan-500" appReveal="animate-slide-up" delay="{{i/10 + 0.2}}">
 
           <img [ngSrc]="s.logo" width="50" height="50" [alt]="s.name"
             class="object-contain m-1 max-w-7 hover:scale-110 transition">
@@ -48,18 +48,18 @@
     </div>
 
     <!-- RIGHT: HERO CONTENT -->
-    <div class="bg-gray-900/70 animate-slide-right backdrop-blur-md p-10 md:p-14 flex flex-col justify-center space-y-6">
+    <div class="bg-gray-900/70 backdrop-blur-md p-10 md:p-14 flex flex-col justify-center space-y-6">
 
       <!-- Heading -->
-      <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+      <h1 appReveal="animate-slide-down" delay="0.2" class="text-4xl md:text-5xl font-bold leading-tight">
         About Me
       </h1>
 
 
       <!-- About Content -->
       <div class="space-y-4 text-gray-300 leading-relaxed pt-4">
-        @for(a of p.about; track a){
-          <p class="text-base md:text-lg">
+        @for(a of p.about; track a;let i = $index){
+          <p appReveal="animate-slide-right" delay="{{i/10 +0.2}}" class="text-base md:text-lg">
             {{ a.description }}
           </p>
         }
