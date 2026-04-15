@@ -1,91 +1,74 @@
-<section class="min-h-screen from-gray-950 via-gray-900 to-black text-white px-6 py-20">
+<section class="min-h-screen bg-gradient-to-br from-gray-950 via-gray-900 to-black text-white px-6 py-20">
 
   <div class="max-w-6xl mx-auto text-center">
 
     <!-- Heading -->
-    <h2 class="text-3xl md:text-4xl font-bold mb-4 
-               bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+    <h2 appReveal="animate-slide-down" class="bg-gradient-to-br text-3xl md:text-4xl font-bold mb-4 
+                from-cyan-400 to-blue-500 bg-clip-text text-transparent">
       What I Do
     </h2>
 
-    <p class="text-gray-400 max-w-2xl mx-auto mb-16">
+    <p appReveal="animate-slide-down" delay="0.2" class="text-gray-400 max-w-2xl mx-auto mb-16">
       I build modern web applications using scalable backend technologies and responsive frontend frameworks.
     </p>
 
-    <!-- CATEGORY LOOP -->
-    <div class="space-y-12">
+    <!-- CATEGORY CARDS -->
+    <div class="grid gap-10 md:grid-cols-2 items-start">
 
-      @for(item of skills(); track item.type)
+      @for(item of skills(); track item.type ; let i = $index)
       {
-        <div>
+      <div class="bg-white/5 border border-white/10 rounded-2xl p-6 
+                    backdrop-blur-xl shadow-lg shadow-black/30
+                    hover:shadow-cyan-500/10 transition duration-300">
 
-          <!-- Category Title -->
-          <h3 class="text-lg font-semibold text-cyan-400 mb-6 text-left">
-            {{ item.type }}
-          </h3>
+        <!-- Title -->
+        <h3 appReveal="animate-slide-down" delay="{{i/10}}" class="text-lg font-semibold text-cyan-400 mb-6 text-left">
+          {{ item.type }}
+        </h3>
 
-          <!-- SKILLS GRID -->
-          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+        <div class="max-h-screen transition-all duration-500 ease-out">
+          <!-- Skills -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 items-start">
 
-            @for(skill of (isExpanded(item.type) ? item.skills : item.skills.slice(0,4)); track skill.name)
+            @for(skill of (isExpanded(item.type) ? item.skills : item.skills.slice(0,6)); track skill.name ; let j =
+            $index)
             {
-              <div appReveal="animate-slide-down"
-                class="group relative rounded-2xl p-6 
-                       bg-white/5 backdrop-blur-xl border border-white/10
-                       flex flex-col items-center justify-center
-                       shadow-lg shadow-black/30
-                       hover:-translate-y-2 hover:shadow-cyan-500/20
-                       hover:border-cyan-400/30
-                       transition duration-300 overflow-hidden">
+            <div appReveal="animate-slide-up" delay="{{i/100 + j/100}}" class="flex items-center gap-3 p-3 rounded-xl 
+                          bg-white/5 border border-white/10
+                          hover:border-cyan-400/40 hover:bg-cyan-500/10
+                          ">
 
-                <!-- Glass Reflection -->
-                <div class="absolute inset-0 bg-white/10 opacity-10 blur-2xl"></div>
+              <!-- Icon -->
+              <img [ngSrc]="skill.logoUrl" width="30" height="30" class="object-contain" />
 
-                <!-- Glow Layer -->
-                <div class="absolute inset-0 bg-gradient-to-br from-cyan-500/10 to-blue-500/10 
-                            opacity-0 group-hover:opacity-100 transition blur-xl">
-                </div>
+              <!-- Name -->
+              <span class="text-sm text-gray-300">
+                {{ skill.name }}
+              </span>
 
-                <!-- ICON -->
-                <img 
-                  [ngSrc]="skill.logoUrl"
-                  width="50"
-                  height="50"
-                  [alt]="skill.name"
-                  class="relative z-10 object-contain mb-4 
-                         group-hover:scale-110 transition duration-300"
-                >
-
-                <!-- NAME -->
-                <span class="relative z-10 text-sm text-gray-300 
-                             group-hover:text-white transition">
-                  {{ skill.name }}
-                </span>
-
-              </div>
+            </div>
             }
 
           </div>
+        </div>
 
-          <!-- SHOW MORE BUTTON -->
-          @if(item.skills.length > 4){
-            <div class="mt-6 text-center">
+        <!-- Button -->
+        @if(item.skills.length > 6){
+        <div appReveal="animate-slide-up" delay="{{i/100}}" class="mt-6 text-center">
 
-              <button 
-                (click)="toggleSkills(item.type)"
-                class="px-6 py-2 rounded-full text-sm 
+          <button (click)="toggleSkills(item.type)" class="px-5 py-2 rounded-full text-sm 
                        bg-white/5 border border-white/10 
                        hover:bg-cyan-500/10 hover:border-cyan-400
                        transition">
 
-                {{ isExpanded(item.type) ? 'Show Less' : 'Show More' }}
+            {{ isExpanded(item.type) ? 'Show Less' : 'Show More' }}
 
-              </button>
-
-            </div>
-          }
+          </button>
 
         </div>
+        }
+
+      </div>
       }
 
     </div>

@@ -6,8 +6,8 @@ export interface Project {
   company:string
 
   // 🔥 Optional but important for UI
-  image?: string;
-  techstack?: string[];
+  image: string;
+  techstack: string[];
   github?: string;
   live?: string;
   featured?: boolean;

@@ -1,6 +1,6 @@
 export interface Skill{
     name:string;
-    logoURL:string;
+    logoUrl:string;
 }
 
 export interface SkillGroup{

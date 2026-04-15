@@ -1,10 +1,11 @@
 import { Component, inject } from '@angular/core';
 import { DataService } from '../../core/service/data.service';
 import { NgOptimizedImage } from '@angular/common';
+import { RevealDirective } from "../../core/directive/reveal.directive";
 
 @Component({
   selector: 'app-projects',
-  imports: [NgOptimizedImage],
+  imports: [NgOptimizedImage, RevealDirective],
   templateUrl: './projects.html',
   styleUrl: './projects.css',
   standalone:true
