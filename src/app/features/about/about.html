@@ -1,7 +1,8 @@
 @if(profile(); as p){
 <section class="min-h-screen from-gray-950 via-gray-900 to-black text-white flex items-center justify-center px-6">
 
-  <div class="max-w-6xl w-full grid md:grid-cols-2 rounded-2xl overflow-hidden shadow-2xl backdrop-blur-lg border border-white/10">
+  <div
+    class="max-w-6xl w-full grid md:grid-cols-2 rounded-2xl overflow-hidden shadow-2xl backdrop-blur-lg border border-white/10">
 
     <!-- LEFT: PROFILE CARD -->
     <div class="relative from-gray-900 to-gray-800 p-10 flex flex-col items-center text-center">
@@ -11,15 +12,9 @@
 
       <!-- Profile Image (BIG + CENTERED) -->
       <div appReveal="animate-slide-down" delay="0.2" class="relative z-10 flex justify-center w-full">
-        <img 
-          ngSrc="assets/images/profile2.png" 
-          alt="profile"
-          height="300"
-          width="300"
-          class="w-52 h-52 md:w-64 md:h-64 rounded-full object-cover 
+        <img ngSrc="assets/images/profile2.png" alt="profile" height="300" width="300" class="w-52 h-52 md:w-64 md:h-64 rounded-full object-cover 
                  border-4 border-white/10 shadow-2xl 
-                 ring-4 ring-cyan-500/20 mx-auto"
-        />
+                 ring-4 ring-cyan-500/20 mx-auto" />
       </div>
 
       <!-- Name -->
@@ -35,13 +30,15 @@
       <!-- Divider -->
       <div class="w-20 from-cyan-400 to-purple-500 my-5"></div>
 
-      
+
       <div class="relative z-10 flex gap-4 text-xl text-gray-400 pt-2">
         @for(s of p.socials; track s;let i = $index){
-        <a [href]="s.link" target="_blank" class=" border-cyan-400 shadow-cyan-500" appReveal="animate-slide-up" delay="{{i/10 + 0.2}}">
+        <a [href]="s.link" target="_blank" class=" border-cyan-400 shadow-cyan-500" appReveal="animate-slide-up"
+          delay="{{i/10 + 0.2}}">
 
-          <img [ngSrc]="s.logo" width="50" height="50" [alt]="s.name"
-            class="object-contain m-1 max-w-7 hover:scale-110 transition">
+          <svg [attr.viewBox]="s.viewBox" fill="currentColor" class="w-9 h-9">
+            <path [attr.d]="s.path"></path>
+          </svg>
         </a>
         }
       </div>
@@ -59,9 +56,9 @@
       <!-- About Content -->
       <div class="space-y-4 text-gray-300 leading-relaxed pt-4">
         @for(a of p.about; track a;let i = $index){
-          <p appReveal="animate-slide-right" delay="{{i/10 +0.2}}" class="text-base md:text-lg">
-            {{ a.description }}
-          </p>
+        <p appReveal="animate-slide-right" delay="{{i/10 +0.2}}" class="text-base md:text-lg">
+          {{ a.description }}
+        </p>
         }
       </div>
 
