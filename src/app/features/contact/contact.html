@@ -42,8 +42,11 @@
                  hover:bg-cyan-500/20 hover:scale-110 hover:border-cyan-400/40
                  transition">
 
-          <img [ngSrc]="s.logo" width="20" height="20" [alt]="s.name"
-            class="object-contain" />
+          <svg [attr.viewBox]="s.viewBox" fill="currentColor" class="w-9 h-9">
+
+            <path [attr.d]="s.path"></path>
+
+          </svg>
         </a>
         }
       </div>
