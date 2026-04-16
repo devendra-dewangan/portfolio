@@ -5,7 +5,7 @@
     "location": "Bangalore, India",
     "startdate": "2023-03",
     "enddate": "Present",
-    "logo": "assets/logos/siemens.png",
+    "logo": "assets/logos/siemens.webp",
     "description": [
       "Working on Titan, a modern web-based application for vital sign monitoring devices",
       "Developing scalable backend services using .NET Core and REST APIs",
@@ -21,7 +21,7 @@
     "location": "Bangalore, India",
     "startdate": "2022-07",
     "enddate": "2023-02",
-    "logo": "assets/logos/siemens.png",
+    "logo": "assets/logos/siemens.webp",
     "description": [
       "Worked on Sensis project, a vital sign monitoring system",
       "Developed a Log Analyzer tool using .NET Framework to process device logs",
@@ -37,7 +37,7 @@
     "location": "Bangalore, India",
     "startdate": "2022-01",
     "enddate": "2022-07",
-    "logo": "assets/logos/siemens.png",
+    "logo": "assets/logos/siemens.webp",
     "description": [
       "Built a Log Mapper Tool using Python and Tkinter",
       "Created a GUI to extract and map PDF data with APIs",
