@@ -13,4 +13,5 @@ import { RevealDirective } from "../../core/directive/reveal.directive";
 export class About {
   private dataService = inject(DataService);
   profile = this.dataService.get('profile');
+  skills = this.dataService.get('skills');
 }

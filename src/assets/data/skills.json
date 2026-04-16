@@ -7,6 +7,14 @@
         "logoUrl": "https://cdn.simpleicons.org/dotnet/white"
       },
       {
+        "name": "SQL Server",
+        "logoUrl": "https://cdn.simpleicons.org/databricks/white"
+      },
+      {
+        "name": "OAuth",
+        "logoUrl": "https://cdn.simpleicons.org/auth0/white"
+      },
+      {
         "name": "Entity Framework Core",
         "logoUrl": "https://cdn.simpleicons.org/dotnet/white"
       },
@@ -15,20 +23,12 @@
         "logoUrl": "https://cdn.simpleicons.org/swagger/white"
       },
       {
-        "name": "SQL Server",
-        "logoUrl": "https://cdn.simpleicons.org/databricks/white"
-      },
-      {
         "name": "Identity Framework Core",
         "logoUrl": "https://cdn.simpleicons.org/dotnet/white"
       },
       {
         "name": "JWT",
         "logoUrl": "https://cdn.simpleicons.org/jsonwebtokens/white"
-      },
-      {
-        "name": "OAuth",
-        "logoUrl": "https://cdn.simpleicons.org/auth0/white"
       },
       {
         "name": "Redis",
@@ -48,6 +48,10 @@
         "logoUrl": "https://cdn.simpleicons.org/ionic"
       },
       {
+        "name": "Tailwind CSS",
+        "logoUrl": "https://cdn.simpleicons.org/tailwindcss/white"
+      },
+      {
         "name": "RxJS",
         "logoUrl": "https://cdn.simpleicons.org/reactivex"
       },
@@ -58,10 +62,6 @@
       {
         "name": "Angular Material",
         "logoUrl": "https://cdn.simpleicons.org/angular/white"
-      },
-      {
-        "name": "Tailwind CSS",
-        "logoUrl": "https://cdn.simpleicons.org/tailwindcss/white"
       },
       {
         "name": "Bootstrap",
@@ -75,6 +75,10 @@
       {
         "name": "Specflow",
         "logoUrl": "https://cdn.simpleicons.org/cucumber"
+      },
+      {
+        "name": "Selenium",
+        "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg"
       },
       {
         "name": "XUnit",
@@ -99,10 +103,6 @@
       {
         "name": "Playwright",
         "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/playwright/playwright-original.svg"
-      },
-      {
-        "name": "Selenium",
-        "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg"
       }
     ]
   },
@@ -143,6 +143,14 @@
     "type": "Tools",
     "skills": [
       {
+        "name": "Azure DevOps",
+        "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg"
+      },
+      {
+        "name": "GitHub Copilot",
+        "logoUrl": "https://cdn.simpleicons.org/githubcopilot/white"
+      },
+      {
         "name": "Visual Studio",
         "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg"
       },
@@ -151,20 +159,12 @@
         "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
       },
       {
-        "name": "Azure DevOps",
-        "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg"
-      },
-      {
         "name": "Postman",
         "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg"
       },
       {
         "name": "Git",
         "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
-      },
-      {
-        "name": "GitHub Copilot",
-        "logoUrl": "https://cdn.simpleicons.org/githubcopilot/white"
       }
     ]
   },
@@ -176,13 +176,14 @@
         "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
       },
       {
-        "name": "JavaScript",
-        "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-      },
-      {
         "name": "TypeScript",
         "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
       },
+      {
+        "name": "JavaScript",
+        "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+      },
+      
       {
         "name": "HTML5",
         "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
@@ -201,6 +202,14 @@
     "type": "Methodology",
     "skills": [
       {
+        "name": "Code Review",
+        "logoUrl": "https://cdn.simpleicons.org/github/white"
+      },
+      {
+        "name": "Debugging",
+        "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+      },
+      {
         "name": "Agile",
         "logoUrl": "https://cdn.simpleicons.org/scrumalliance"
       },
@@ -213,18 +222,6 @@
         "logoUrl": "https://cdn.simpleicons.org/scrumalliance"
       },
       {
-        "name": "Code Review",
-        "logoUrl": "https://cdn.simpleicons.org/github/white"
-      },
-      {
-        "name": "Debugging",
-        "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
-      },
-      {
-        "name": "Documentation",
-        "logoUrl": "https://cdn.simpleicons.org/readthedocs/"
-      },
-      {
         "name": "Pair Programming",
         "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
       },
@@ -235,6 +232,10 @@
       {
         "name": "Behavior Driven Development",
         "logoUrl": "https://cdn.simpleicons.org/cucumber"
+      },
+      {
+        "name": "Documentation",
+        "logoUrl": "https://cdn.simpleicons.org/readthedocs/"
       }
     ]
   }

@@ -1,5 +1,6 @@
 @if(profile(); as p){
-<section class="min-h-screen bg-gradient-to-br from-gray-950 via-gray-900 to-black text-white flex items-center justify-center px-6">
+<section
+  class="min-h-screen bg-gradient-to-br from-gray-950 via-gray-900 to-black text-white flex items-center justify-center px-6">
 
   <div
     class="max-w-6xl w-full grid md:grid-cols-2 rounded-2xl overflow-hidden shadow-2xl backdrop-blur-lg border border-white/10">
@@ -33,7 +34,7 @@
 
       <div class="relative z-10 flex gap-4 text-xl text-gray-400 pt-2">
         @for(s of p.socials; track s;let i = $index){
-        <a [href]="s.link" target="_blank" class=" border-cyan-400 shadow-cyan-500" appReveal="animate-slide-up"
+        <a [href]="s.link" target="_blank" class="hover:scale-110 transition ease-in-out border-cyan-400 shadow-cyan-500" appReveal="animate-slide-up"
           delay="{{i/10 + 0.2}}">
 
           <svg [attr.viewBox]="s.viewBox" fill="currentColor" class="w-9 h-9">
@@ -45,7 +46,7 @@
     </div>
 
     <!-- RIGHT: HERO CONTENT -->
-    <div class="bg-gray-900/70 backdrop-blur-md p-10 md:p-14 flex flex-col justify-center space-y-6">
+    <div class="bg-gray-900/70 backdrop-blur-md p-10 pt-3 md:p-6 flex flex-col justify-center space-y-6">
 
       <!-- Heading -->
       <h1 appReveal="animate-slide-down" delay="0.2" class="text-4xl md:text-5xl font-bold leading-tight">
@@ -60,6 +61,25 @@
           {{ a.description }}
         </p>
         }
+      </div>
+
+      <div class="space-y-6 text-gray-300 pt-2">
+
+        <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-4">
+          @for (section of skills(); track section.type; let i = $index) {
+
+          @for (item of section.skills.slice(0, 2); track $index) {
+
+          <img appReveal="animate-slide-up" delay="{{i/10 + 0.2}}" [src]="item.logoUrl" [alt]="item.name" class="w-10 h-10 object-contain 
+                   grayscale hover:grayscale-0 
+                   hover:scale-110 transition duration-300" />
+
+          }
+
+
+          }
+        </div>
+
       </div>
 
     </div>
