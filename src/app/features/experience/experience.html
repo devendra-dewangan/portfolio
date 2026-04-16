@@ -23,7 +23,8 @@
           <div class="relative grid md:grid-cols-2 items-center">
 
             <!-- LEFT / RIGHT CARD -->
-            <div class="md:pr-12" 
+            <div [appReveal]="i % 2 === 0 ? 'animate-slide-right' : 'animate-slide-left'"
+                 [class]="i % 2 === 0 ? 'md:pr-12' : 'md:pl-12'"
                  [class.md:text-right]="i % 2 === 0"
                  [class.md:order-1]="i % 2 !== 0">
 
@@ -67,19 +68,11 @@
             </div>
 
             <!-- CENTER DOT WITH LOGO -->
-            <div class="absolute left-1/2 -translate-x-1/2 z-10">
-
-              <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center
-                          shadow-lg shadow-cyan-500/40 ring-4 ring-cyan-500/10">
-
-                <img 
-                  [src]="e.logo" 
-                  alt="logo"
-                  class="w-5 h-5 object-contain"
-                />
-
-              </div>
-
+            <div class="absolute left-1/2 -translate-x-1/2 ">
+              <span class="w-4 h-4 bg-cyan-400 rounded-full 
+                           shadow-lg shadow-cyan-500/50 
+                           ring-4 ring-cyan-500/10 block">
+              </span>
             </div>
 
             <!-- EMPTY SIDE -->

@@ -9,12 +9,12 @@
     <div class="space-y-7">
 
       <!-- Heading -->
-      <h2 class="text-4xl md:text-5xl font-bold 
+      <h2 appReveal="animate-slide-down" class="text-4xl md:text-5xl font-bold 
                  bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
         Get in Touch
       </h2>
 
-      <p class="text-gray-400 max-w-md leading-relaxed">
+      <p appReveal="animate-slide-down" delay="0.2" class="text-gray-400 max-w-md leading-relaxed">
         Have a project in mind or want to collaborate? Feel free to reach out.
         I'm always open to discussing new ideas and opportunities.
       </p>
@@ -22,12 +22,12 @@
       <!-- Contact Info -->
       <div class="space-y-4">
 
-        <div>
+        <div appReveal="animate-slide-left">
           <p class="text-xs text-gray-500 uppercase tracking-wider">Email</p>
           <p class="text-lg text-gray-200">{{p.email}}</p>
         </div>
 
-        <div>
+        <div appReveal="animate-slide-left" delay="0.2">
           <p class="text-xs text-gray-500 uppercase tracking-wider">Phone</p>
           <p class="text-lg text-gray-200">{{p.phone}}</p>
         </div>
@@ -36,8 +36,8 @@
 
       <!-- Social -->
       <div class="flex gap-5 pt-4">
-        @for(s of p.socials; track s){
-        <a [href]="s.link" target="_blank"
+        @for(s of p.socials; track s ; let j = $index){
+        <a appReveal="animate-slide-up" delay="{{j/10}}" [href]="s.link" target="_blank"
           class="p-3 rounded-full bg-white/5 border border-white/10 
                  hover:bg-cyan-500/20 hover:scale-110 hover:border-cyan-400/40
                  transition">
@@ -54,7 +54,7 @@
     </div>
 
     <!-- RIGHT SIDE -->
-    <div class="relative">
+    <div appReveal="animate-slide-right" class="relative">
 
       <!-- Glow -->
       <div class="absolute inset-0 bg-cyan-500/10 blur-3xl"></div>

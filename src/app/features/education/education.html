@@ -1,4 +1,4 @@
-<section class="h-full bg-gradient-to-br from-gray-950 via-gray-900 to-black text-white px-6 py-20">
+<section class="min-h-screen bg-gradient-to-br from-gray-950 via-gray-900 to-black text-white px-6 py-20">
 
   <div class="max-w-6xl mx-auto">
 
@@ -23,7 +23,8 @@
           <div class="relative grid md:grid-cols-2 items-center">
 
             <!-- CARD -->
-            <div class="md:pr-12"
+            <div [appReveal]="i % 2 === 0 ? 'animate-slide-right' : 'animate-slide-left'"
+                 [class]="i % 2 === 0 ? 'md:pr-12' : 'md:pl-12'"
                  [class.md:text-right]="i % 2 === 0"
                  [class.md:order-1]="i % 2 !== 0">
 
@@ -69,7 +70,7 @@
             </div>
 
             <!-- CENTER DOT -->
-            <div class="absolute left-1/2 -translate-x-1/2 z-10">
+            <div class="absolute left-1/2 -translate-x-1/2 md:z-10 hidden md:block">
               <span class="w-4 h-4 bg-cyan-400 rounded-full 
                            shadow-lg shadow-cyan-500/50 
                            ring-4 ring-cyan-500/10 block">
