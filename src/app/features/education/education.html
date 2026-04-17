@@ -12,13 +12,13 @@
     <div class="relative">
 
       <!-- Center Line -->
-      <div class="absolute left-1/2 top-0 -translate-x-1/2 w-[2px] h-full 
+      <div class="absolute left-1/2 top-0 -translate-x-1/2 w-[2px] h-full
                   bg-gradient-to-b from-cyan-500/40 via-blue-500/30 to-transparent">
       </div>
 
       <div class="space-y-16">
 
-        @for(e of education(); track e; let i = $index){
+        @for(e of education(); track e; let i = $index){`
 
           <div class="relative grid md:grid-cols-2 items-center">
 
@@ -70,7 +70,7 @@
             </div>
 
             <!-- CENTER DOT -->
-            <div class="absolute left-1/2 -translate-x-1/2 md:z-10 hidden md:block">
+            <div class="absolute left-1/2 -translate-x-1/2 z-10 md:block">
               <span class="w-4 h-4 bg-cyan-400 rounded-full 
                            shadow-lg shadow-cyan-500/50 
                            ring-4 ring-cyan-500/10 block">

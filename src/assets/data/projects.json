@@ -40,6 +40,7 @@
     "duration": "2026",
     "completionDate": "2026-01",
     "status": "Completed",
+    "image": "assets/images/portfolio.png",
     "techStack": [
       "Angular",
       "TypeScript",

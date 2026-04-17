@@ -28,7 +28,7 @@
 
         <div class="max-h-screen transition-all duration-500 ease-out">
           <!-- Skills -->
-          <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 items-start">
+          <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 items-start">
 
             @for(skill of (isExpanded(item.type) ? item.skills : item.skills.slice(0,6)); track skill.name ; let j =
             $index)
