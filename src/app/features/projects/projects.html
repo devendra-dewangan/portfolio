@@ -3,7 +3,8 @@
   <div class="max-w-6xl mx-auto">
 
     <!-- Heading -->
-    <h2 appReveal="animate-slide-down" class="text-3xl md:text-4xl font-bold mb-12 text-center 
+    <h2 appReveal="animate-slide-down"
+        class="text-3xl md:text-4xl font-bold mb-12 text-center 
                bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
       Featured Projects
     </h2>
@@ -11,42 +12,56 @@
     <!-- Project Cards -->
     <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 items-start">
 
-      @for(p of project(); track p ; let i = $index)
+      @for(p of project(); track p.id; let i = $index)
       {
 
-        <div appReveal="animate-slide-down" delay="{{i/10}}" class="bg-white/5 border border-white/10 rounded-2xl overflow-hidden
+        <div appReveal="animate-slide-down" [delay]='"{{i/10}}"'
+             class="bg-white/5 border border-white/10 rounded-2xl overflow-hidden
                     backdrop-blur-md shadow-lg hover:shadow-cyan-500/10 
                     hover:-translate-y-2 transition duration-300">
 
-          <!-- Image -->
+          <!-- Image OR Fallback -->
           <div class="relative group">
-            <img 
-              [ngSrc]="p.image"
-              width="600"
-              height="400"
-              class="w-full h-48 object-cover group-hover:scale-105 transition duration-500"
-            />
+
+            @if(p.image){
+              <img 
+                [ngSrc]="p.image"
+                width="600"
+                height="400"
+                class="w-full h-48 object-cover group-hover:scale-105 transition duration-500"
+              />
+            } @else {
+              <!-- Fallback UI for enterprise project -->
+              <div class="h-48 flex items-center justify-center 
+                          bg-gradient-to-br from-cyan-500/20 to-blue-600/20">
+                <span class="text-4xl">🏥</span>
+              </div>
+            }
+
             <div class="absolute inset-0 bg-cyan-500/10 opacity-20"></div>
           </div>
 
           <!-- Content -->
           <div class="p-5 space-y-4">
 
-            <!-- Company -->
-            @if(p.company){
-              <span appReveal="animate-slide-down" delay="{{i/10 + 0.05}}" class="text-xs px-2 py-1 bg-white/5 border border-white/10 rounded text-gray-400">
-                {{ p.company }}
+            <!-- Organization -->
+            @if(p.organization){
+              <span appReveal="animate-slide-down" [delay]='"{{i/10 + 0.05}}"'
+                    class="text-xs px-2 py-1 bg-white/5 border border-white/10 rounded text-gray-400">
+                {{ p.organization }}
               </span>
             }
 
             <!-- Title -->
-            <h3 appReveal="animate-slide-down" delay="{{i/10 + 0.1}}" class="text-xl font-semibold text-cyan-400">
+            <h3 appReveal="animate-slide-down" [delay]='"{{i/10 + 0.1}}"'
+                class="text-xl font-semibold text-cyan-400">
               {{ p.name }}
             </h3>
 
             <!-- Meta -->
-            <div appReveal="animate-slide-down" delay="{{i/10 + 0.15}}" class="flex justify-between text-xs text-gray-400">
-              <span>{{ p.completiondate }}</span>
+            <div appReveal="animate-slide-down" [delay]='"{{i/10 + 0.15}}"'
+                 class="flex justify-between text-xs text-gray-400">
+              <span>{{ p.completionDate }}</span>
               <span class="px-2 py-1 bg-white/5 border border-white/10 rounded">
                 {{ p.status }}
               </span>
@@ -54,8 +69,9 @@
 
             <!-- Description -->
             <ul class="space-y-1 text-sm text-gray-300">
-              @for(d of p.description.slice(0,2); track d ; let j= $index){
-                <li appReveal="animate-slide-right" delay="{{i/10 + j/20}}" class="flex gap-2">
+              @for(d of p.description.slice(0,2); track d; let j = $index){
+                <li appReveal="animate-slide-right" [delay]='"{{i/10 + j/20}}"'
+                    class="flex gap-2">
                   <span class="text-cyan-400">▹</span>
                   <span>{{ d }}</span>
                 </li>
@@ -63,37 +79,40 @@
             </ul>
 
             <!-- Tech Stack -->
-            @if(p.techstack){
+            @if(p.techStack){
               <div class="flex flex-wrap gap-2">
-                @for(t of p.techstack; track t;let j =$index){
-                  <span appReveal="animate-slide-up" delay="{{i/10 + j/20 +0.05}}" class="px-2 py-1 text-xs bg-cyan-500/10 border border-cyan-500/20 rounded-full">
+                @for(t of p.techStack; track t; let j = $index){
+                  <span appReveal="animate-slide-up"
+                        [delay]='"{{i/10 + j/20 + 0.05}}"'
+                        class="px-2 py-1 text-xs bg-cyan-500/10 border border-cyan-500/20 rounded-full">
                     {{ t }}
                   </span>
                 }
               </div>
             }
 
-            @if(p.github || p.live)
-            {
             <!-- Buttons -->
-            <div class="flex gap-3 pt-2">
+            @if(p.github || p.live){
+              <div class="flex gap-3 pt-2">
 
-              @if(p.github){
-                <a appReveal="animate-slide-up" delay="{{i/10 + 0.2}}" [href]="p.github" target="_blank"
-                   class="text-xs px-3 py-1 rounded-full bg-white/10 border border-white/20 hover:bg-white/20 transition">
-                  GitHub
-                </a>
-              }
+                @if(p.github){
+                  <a appReveal="animate-slide-up" [delay]='"{{i/10 + 0.2}}"'
+                     [href]="p.github" target="_blank"
+                     class="text-xs px-3 py-1 rounded-full bg-white/10 border border-white/20 hover:bg-white/20 transition">
+                    GitHub
+                  </a>
+                }
 
-              @if(p.live){
-                <a appReveal="animate-slide-up" delay="{{i/10 + 0.25}}" [href]="p.live" target="_blank"
-                   class="text-xs px-3 py-1 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 text-black font-semibold">
-                  Live
-                </a>
-              }
-              
-            </div>
-          }
+                @if(p.live){
+                  <a appReveal="animate-slide-up" [delay]='"{{i/10 + 0.25}}"'
+                     [href]="p.live" target="_blank"
+                     class="text-xs px-3 py-1 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 text-black font-semibold">
+                    Live
+                  </a>
+                }
+
+              </div>
+            }
 
           </div>
 
@@ -102,26 +121,26 @@
       }
 
     </div>
-
-    <!-- View All Button -->
+    @if(profile(); as p){
+      <!-- View All Button -->
+    <!-- View All -->
     <div appReveal="animate-slide-up" delay="0.3" class="text-center mt-14">
 
       <a 
-        [href]=""
+        [href]="p.socials.find(s => s.name.toLowerCase() === 'github')?.link",
         target="_blank"
         class="inline-flex items-center gap-2 px-6 py-3 rounded-full 
                bg-gradient-to-r from-cyan-500 to-blue-600 
                text-black font-semibold 
                hover:scale-105 transition duration-300 shadow-lg shadow-cyan-500/20">
 
-        <!-- Icon (optional if using fontawesome) -->
         <span>🐙</span>
-
         View All Projects
 
       </a>
 
     </div>
+  }
 
   </div>
 

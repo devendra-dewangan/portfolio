@@ -12,5 +12,4 @@ export interface DataMap {
     experiences: Experiences;
     projects: Projects;
     educations: Educations;
-
 }

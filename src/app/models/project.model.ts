@@ -1,15 +1,23 @@
 export interface Project {
+  id: string;
   name: string;
-  completiondate: string;
-  status: string;
-  description: string[];
-  company:string
 
-  // 🔥 Optional but important for UI
-  image: string;
-  techstack: string[];
+  role?: string;
+  organization?: string;
+  duration?: string;
+
+  completionDate: string;
+  status: 'Completed' | 'Ongoing';
+
+  description: string[];
+
+  // Optional UI fields
+  image?: string;
+  techStack?: string[];
   github?: string;
   live?: string;
+
+  highlights?: string[];
   featured?: boolean;
 }
 

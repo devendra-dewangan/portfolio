@@ -1,48 +1,131 @@
 [
   {
-    "name": "Titan - Vital Monitoring System",
-    "completiondate": "2024-01",
+    "id": "retail-pos-system",
+    "name": "Smart Retail POS System",
+    "role": "Full Stack Developer",
+    "organization": "Personal Project",
+    "duration": "2025 - Present",
+    "completionDate": "2025-12",
     "status": "Ongoing",
-    "image": "assets/projects/titan.png",
-    "techstack": [".NET Core", "Angular", "WebSocket", "NgRx"],
-    "github": "",
+    "techStack": [
+      ".NET Core",
+      "Angular",
+      "LiteDB",
+      "SQLite",
+      "WebSockets"
+    ],
+    "github": "https://github.com/devendra-dewangan/POS",
     "live": "",
+    "highlights": [
+      "Offline-first system",
+      "Retail automation",
+      "Real-time billing",
+      "Inventory management"
+    ],
     "description": [
-      "Developed a modern web-based application for monitoring vital signs",
-      "Implemented real-time communication using WebSockets",
-      "Built scalable REST APIs using .NET Core",
-      "Designed responsive UI using Angular with state management (NgRx)",
-      "Improved performance using lazy loading and optimized data flow"
+      "Developing a full-featured POS system tailored for small retail and multi-category stores including groceries, clothing, and toys",
+      "Designed an offline-first architecture using LiteDB and SQLite for reliable local data storage without internet dependency",
+      "Implemented real-time billing system with WebSocket integration for instant transaction updates",
+      "Built inventory management with stock tracking, low-stock alerts, and category organization",
+      "Developed responsive UI using Angular with service-based state management for smooth user experience",
+      "Designed backend services using .NET Core with efficient local database operations for high performance",
+      "Planning features like GST billing, reporting dashboards, and multi-user role management"
     ]
   },
   {
-    "name": "Log Analyzer Tool",
-    "completiondate": "2023-02",
+    "id": "developer-portfolio",
+    "name": "Modern Developer Portfolio",
+    "role": "Full Stack Developer",
+    "organization": "Personal Project",
+    "duration": "2026",
+    "completionDate": "2026-01",
     "status": "Completed",
-    "image": "assets/projects/log-analyzer.png",
-    "techstack": [".NET Framework", "C#", "Automation"],
-    "github": "",
-    "live": "",
+    "techStack": [
+      "Angular",
+      "TypeScript",
+      "Tailwind CSS",
+      "HTML",
+      "CSS"
+    ],
+    "github": "https://github.com/devendra-dewangan/portfolio",
+    "live": "https://devendradew.web.app",
+    "featured": true,
+    "highlights": [
+      "Modern UI/UX",
+      "Responsive design",
+      "Performance optimized",
+      "Reusable components"
+    ],
     "description": [
-      "Built a tool to analyze logs from medical devices",
-      "Ensured no sensitive patient data was exposed",
-      "Automated log validation for testing workflows",
-      "Integrated tool with testing pipeline"
+      "Designed and developed a modern, responsive developer portfolio to showcase projects and professional experience",
+      "Implemented reusable UI components with Angular and Tailwind CSS for scalable and maintainable design",
+      "Integrated smooth animations and scroll-based reveal effects to enhance user experience",
+      "Optimized performance using lazy loading and efficient rendering techniques",
+      "Structured project data dynamically using JSON for easy scalability and content management"
     ]
   },
   {
-    "name": "Log Mapper Tool",
-    "completiondate": "2022-05",
+    "id": "titan-neocore",
+    "name": "Titan (NeoCore) - Vital Monitoring System",
+    "role": "Software Developer",
+    "organization": "Siemens Healthineers",
+    "duration": "Jun 2022 - Dec 2025",
+    "completionDate": "2025-12",
     "status": "Completed",
-    "image": "assets/projects/log-mapper.png",
-    "techstack": ["Python", "Tkinter", "API"],
+    "techStack": [
+      ".NET Core",
+      "REST APIs",
+      "WebSockets",
+      "Angular",
+      "SpecFlow",
+      "Azure"
+    ],
     "github": "",
     "live": "",
+    "highlights": [
+      "Healthcare domain",
+      "Real-time monitoring",
+      "Scalable architecture",
+      "Automation framework"
+    ],
     "description": [
-      "Created a GUI tool to extract and map data from PDF files",
-      "Integrated APIs to automate testing workflows",
-      "Improved efficiency of manual testing processes",
-      "Designed user-friendly interface using Tkinter"
+      "Contributed to NeoCore, a next-generation cross-platform medical system replacing legacy solutions for real-time patient vital monitoring and therapy management",
+      "Designed and developed a Vital Alarm Service enabling reliable real-time alerts for critical patient conditions",
+      "Built a centralized Notification Center and Alert Logs to improve traceability, reminders, and auditability for healthcare workflows",
+      "Implemented multi-language (NLS) support across 5+ languages, enhancing global accessibility",
+      "Established SSIT environment and developed SITA automation framework, reducing manual testing effort by 40%",
+      "Developed scalable backend services using .NET Core with REST APIs and WebSockets for real-time communication",
+      "Built responsive and performant frontend using Angular with state management (NgRx)"
+    ]
+  },
+  {
+    "id": "sensis-monitoring",
+    "name": "Sensis - Vital Monitoring System",
+    "role": "Software Developer Intern",
+    "organization": "Siemens Healthineers",
+    "duration": "Jan 2022 - May 2022",
+    "completionDate": "2022-05",
+    "status": "Completed",
+    "techStack": [
+      ".NET Core",
+      "Entity Framework Core",
+      "SQL Server",
+      "Azure"
+    ],
+    "github": "",
+    "live": "",
+    "highlights": [
+      "Healthcare domain",
+      "Log analysis system",
+      "Automation",
+      "Performance optimization"
+    ],
+    "description": [
+      "Contributed to Sensis, a real-time patient vital monitoring system in the healthcare domain",
+      "Developed a log analysis system processing 10,000+ logs per day, improving checklist reliability and ensuring zero exposure of sensitive patient data",
+      "Built a document-to-API mapping tool that reduced smoke test execution time and errors by 50% across 100+ daily test cases",
+      "Collaborated across Development and QA teams, managing 50+ tasks across agile sprints",
+      "Worked on backend development using .NET Core, EF Core, and SQL Server with deployment support on Azure"
     ]
   }
 ]
