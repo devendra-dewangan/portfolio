@@ -1,10 +1,9 @@
+<section class="min-h-screen xl:min-h-screen lg:min-h-svw bg-gradient-to-br w-full grid md:grid-cols-2 from-gray-950 via-gray-900 to-black text-white">
 @if(profile(); as p)
 {
 
-<section class="min-h-screen bg-gradient-to-br w-full grid md:grid-cols-2 from-gray-950 via-gray-900 to-black text-white">
-
   <!-- LEFT SIDE -->
-  <div class="flex items-center px-6 md:px-12 lg:px-32">
+  <div class="flex items-center px-6 md:px-12 lg:pl-32">
 
     <div class="space-y-7 max-w-xl">
 
@@ -79,10 +78,10 @@
   </div>
 
   <!-- RIGHT SIDE -->
-  <div appReveal="animate-slide-right" delay="0.3" class="hidden md:block relative h-screen">
+  <div appReveal="animate-slide-right" delay="0.3" class="hidden md:block relative h-full">
 
     <!-- IMAGE -->
-    <img ngSrc="assets/images/profile.png" alt="profile" width="1024" height="1536" class="w-full h-full object-cover 
+    <img ngSrc="assets/images/profile.png" alt="profile" width="1024" height="1536" class="lg:w-full md:h-full object-cover 
              brightness-105 contrast-110 
              hover:scale-105 transition duration-700" />
 
@@ -91,5 +90,5 @@
 
   </div>
 
-</section>
 }
+</section>

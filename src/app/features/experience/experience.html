@@ -12,11 +12,11 @@
     <div class="relative">
 
       <!-- Center Line -->
-      <div class="absolute left-1/2 top-0 -translate-x-1/2 w-[2px] h-full 
+      <div class="absolute left-1/2 top-0 -translate-x-1/2 w-[2px] h-full hidden md:block
                   bg-gradient-to-b from-cyan-500/40 via-blue-500/30 to-transparent">
       </div>
 
-      <div class="space-y-16">
+      <div class="space-y-6 md:space-y-16">
 
         @for (e of experience(); track e; let i = $index) {
 
@@ -68,7 +68,7 @@
             </div>
 
             <!-- CENTER DOT WITH LOGO -->
-            <div class="absolute left-1/2 -translate-x-1/2 ">
+            <div class="absolute left-1/2 -translate-x-1/2  hidden md:block">
               <span class="w-4 h-4 bg-cyan-400 rounded-full 
                            shadow-lg shadow-cyan-500/50 
                            ring-4 ring-cyan-500/10 block">
